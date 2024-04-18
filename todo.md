@@ -28,3 +28,4 @@
 - [ ] Do quantile conformal methods for the non-filled in areas in the table
 - [ ] Apply this method to studentized and cqr variants
 - [ ] Try the averaging method 
+- [ ] Add the conditional mean \hat{f} to the sin simulations
