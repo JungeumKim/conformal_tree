@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-def GetDataset(name, base_path='/home-nfs/raphaelr/cqr_comparison/datasets/'):
+def GetDataset(name, base_path='/Users/seanohagan/projects/cqr-comparison/datasets/'):
     """ Load a dataset
     
     Parameters
@@ -16,6 +16,21 @@ def GetDataset(name, base_path='/home-nfs/raphaelr/cqr_comparison/datasets/'):
     y : labels (n)
     
 	"""
+    if name=="test":
+        import test_data
+        return test_data.gen_test_data()
+
+    if name=="s1":
+        import test_data
+        return test_data.gen_sin_data(data=1)
+    if name=="s2":
+        import test_data
+        return test_data.gen_sin_data(data=2)
+    if name=="s3":
+        import test_data
+        return test_data.gen_sin_data(data=3)
+
+
     if name=="bulldozer":
         X = pd.read_csv('/share/data/willett-group/climate/data/'+'X_train_bulldozer.csv').iloc[:,1:]
         y = pd.read_csv('/share/data/willett-group/climate/data/'+'y_train_bulldozer.csv')['SalePrice']
@@ -24,7 +39,7 @@ def GetDataset(name, base_path='/home-nfs/raphaelr/cqr_comparison/datasets/'):
         # Load the data
         df = pd.read_csv(base_path + 'kc_house_data.csv')
         y = np.array(df['price']).astype(np.float32)
-        X = np.matrix(df.drop(['id', 'date', 'price'],axis=1)).astype(np.float32)
+        X = np.array(df.drop(['id', 'date', 'price'],axis=1)).astype(np.float32)
 
     if name=="meps_19":
         df = pd.read_csv(base_path + 'meps_19_reg.csv')
@@ -305,6 +320,8 @@ def GetDataset(name, base_path='/home-nfs/raphaelr/cqr_comparison/datasets/'):
         dataset = np.loadtxt(open(base_path + 'Concrete_Data.csv', "rb"), delimiter=",", skiprows=1)
         X = dataset[:, :-1]
         y = dataset[:, -1:]
+        y = y.flatten()
+
     
     
     if name=="bike":
@@ -337,7 +354,7 @@ def GetDataset(name, base_path='/home-nfs/raphaelr/cqr_comparison/datasets/'):
     
     if name=="community":
         # https://github.com/vbordalo/Communities-Crime/blob/master/Crime_v1.ipynb
-        attrib = pd.read_csv(base_path + 'communities_attributes.csv', delim_whitespace = True)
+        attrib = pd.read_csv(base_path + 'communities_attributes.csv', sep='\s+')
         data = pd.read_csv(base_path + 'communities.data', names = attrib['attributes'])
         data = data.drop(columns=['state','county',
                           'community','communityname',

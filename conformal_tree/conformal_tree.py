@@ -3,6 +3,33 @@ from typing import Any
 from collections import deque
 
 from conformal_tree._utils import tree_utils
+from sklearn.tree import _tree as ctree
+
+"""NOTE: Currently Tree, AABB are not used. Only CTree class is used for now"""
+
+class AABB:
+    """Axis-aligned bounding box"""
+    def __init__(self, dim, support=None):
+        self.support = support
+        if support is None:
+            self.limits = np.array([[-np.inf, np.inf]] * dim)
+        else:
+            self.limits = np.array(support, dtype=float)
+
+    def __repr__(self):
+        return f"AABB: {self.limits}"
+
+    def split(self, f, v):
+        left = AABB(self.limits.shape[0], self.support)
+        right = AABB(self.limits.shape[0], self.support)
+        left.limits = self.limits.copy()
+        right.limits = self.limits.copy()
+
+        left.limits[f, 1] = v
+        right.limits[f, 0] = v
+
+        return left, right
+
 
 class Tree:
     """Parent class for wrapper for various tree implementations for standardized usage"""
@@ -22,6 +49,7 @@ class Tree:
     def __init__(self, X, y, support):
         self.support = support
         self.leaf_boundaries, self.leaf_intensities = self._get_leaf_info()
+        self.leaf_boundaries = np.array(self.leaf_boundaries)
 
         self.leaf_acceptances = np.zeros(len(self.leaf_boundaries))
         self.leaf_rejections = np.zeros(len(self.leaf_boundaries))
@@ -73,28 +101,40 @@ class Tree:
                     ]
         return zip(*leaf_info)
 
-class AABB:
-    """Axis-aligned bounding box"""
-    def __init__(self, dim, support=None):
-        self.support = support
-        if support is None:
-            self.limits = np.array([[-np.inf, np.inf]] * dim)
+
+class CARTTree(Tree):
+    """Wrapper for logistic CART implementation in sklearn.tree.DecisionTreeClassifier"""
+
+    def __init__(self, X, y, tree, support):
+        dim = support.shape[0]
+        self._tree = tree
+        self.length = tree.node_count
+        self.node_indices = np.arange(self.length)
+        if dim is not None:
+            self.dim = np.max(tree.feature) + 1
         else:
-            self.limits = np.array(support, dtype=float)
+            self.dim = dim
+        super().__init__(X, y, support)
 
-    def __repr__(self):
-        return f"AABB: {self.limits}"
+    def _is_leaf(self, node_idx):
+        return self._tree.children_left[node_idx] == ctree.TREE_LEAF
 
-    def split(self, f, v):
-        left = AABB(self.limits.shape[0], self.support)
-        right = AABB(self.limits.shape[0], self.support)
-        left.limits = self.limits.copy()
-        right.limits = self.limits.copy()
+    def _left_child(self, node_idx):
+        return self._tree.children_left[node_idx]
 
-        left.limits[f, 1] = v
-        right.limits[f, 0] = v
+    def _right_child(self, node_idx):
+        return self._tree.children_right[node_idx]
 
-        return left, right
+    def _split_var(self, node_idx):
+        return self._tree.feature[node_idx]
+
+    def _value(self, node_idx):
+        return self._tree.threshold[node_idx]
+
+    def _intensity(self, node_idx):
+        return self._tree.value[node_idx, 0, 0]
+
+
 
 
 
@@ -104,22 +144,24 @@ def get_indices_in_hyperrect(points, hrect):
 
 class CTree:
 
+    tree_object: Any
     tree_model: Any
     bins: Any
     deltas: Any
+    domain: np.ndarray
+    offsets: np.ndarray
 
-    def __init__(self, tree_model, *args, **kwargs):
-        self.tree = tree_model
-        pass
-
-    def fit_tree(self, X_calib, y_calib):
-        """Fits tree to calibration data
+    def __init__(self, model, domain, *args, **kwargs):
+        """Conformal tree constructor
 
         Args:
-            X_calib (np.ndarray): (N,D) array of calibration data
-            y_calib (np.ndarray): (N,) array of response data
+            model (sklearn.base): Model endowed with predict function
+            domain (np.ndarray): bounding box of domain
         """
-        self.tree_model.fit(X_calib, y_calib)
+        self.model = model
+        self.domain = domain
+        self.offsets = None
+        pass
 
     def calibrate(self, X_calib: np.ndarray, y_calib: np.ndarray, y_model: np.ndarray, alpha: float, n_its: int = 5):
         """Calibrate to calibration data
@@ -131,7 +173,8 @@ class CTree:
         """
 
 
-        tree_model, membership = tree_utils.tree_membership(X_calib, X_calib[:,0]*0)
+        self.tree_model, membership = tree_utils.tree_membership(X_calib, X_calib[:,0]*0)
+
         bin_idx = np.unique(membership)
         scores = np.abs(y_calib-y_model)
 
@@ -140,34 +183,88 @@ class CTree:
             y_lb = np.copy(y_model)
             y_ub = np.copy(y_model)
 
+            self.offsets = {}
 
+            # print(f"bidx: {bin_idx}")
+            # print(self.tree_model.get_n_leaves())
 
             for idx in bin_idx:
                 scores_subset = scores[membership == idx]
                 # print(scores_subset)
                 C = np.quantile(scores_subset, 1-alpha)
+                self.offsets[idx] = C
 
                 y_lb -= C*(membership == idx)
                 y_ub += C*(membership == idx)
 
             c_gap = np.minimum(np.abs(y_lb-y_calib), np.abs(y_ub-y_calib))
-            tree_model, membership = tree_utils.tree_membership(
-                X_calib, c_gap, max_depth=20, max_leaf_nodes=(it+1)*2, min_samples_leaf=20
-            )
-            # print(f"MEMB: {membership}")
-            bin_idx = np.unique(membership)
+            if it != n_its - 1:
+                self.tree_model, membership = tree_utils.tree_membership(
+                    X_calib, c_gap, max_depth=20, max_leaf_nodes=(it+1)*2, min_samples_leaf=20
+                )
+                # print(f"MEMB: {membership}")
+                bin_idx = np.unique(membership)
 
+        self.tree_object = CARTTree(X_calib, y_calib, self.tree_model.tree_, self.domain)
 
         return y_lb, y_ub, c_gap
 
 
-    def interval(self, X: np.ndarray):
-        """Return interval
+    def test_interval(self, X_test: np.ndarray):
+        """Return a prediction interval for test data
 
         Args:
             X (np.ndarray): N x D array of test data
         Returns:
             np.ndarray: N x 2 array of upper and lower bounds for each x
         """
-        pass
 
+        y_test_model = self.model.predict(X_test)
+
+        y_lb = np.copy(y_test_model)
+        y_ub = np.copy(y_test_model)
+
+        test_leaf_idxs = self.tree_model.apply(X_test)
+        # print(f"lenuniq: {np.unique(test_leaf_idxs)}")
+        # print(f"TLI{test_leaf_idxs}")
+
+        lookup = np.vectorize(self.offsets.get)
+        test_offsets = lookup(test_leaf_idxs)
+
+        # print(f"TO: {test_offsets}")
+
+        y_lb -= test_offsets
+        y_ub += test_offsets
+
+        # for i,x_t in enumerate(X_test):
+        #     bin_x_t = find_bounding_box(self.tree_object.leaf_boundaries, x_t)
+        #     C = self.offsets[bin_x_t]
+        #     y_lb[i] = y_test_model[i] - C
+        #     y_ub[i] = y_test_model[i] + C
+
+        return y_lb, y_ub
+
+def find_bounding_box(bounding_boxes, point):
+    """
+    Determines the index of the bounding box that contains the given point.
+
+    Parameters:
+        bounding_boxes (np.ndarray): An array of shape (m, d, 2) where m is the number of boxes,
+                                     d is the dimensionality, and the last dimension stores [lower, upper] bounds.
+        point (np.ndarray): An array of shape (d,) representing the point.
+
+    Returns:
+        int: The index (1-based) of the first bounding box that contains the point, or -1 if no such box exists.
+    """
+    # Check if the point lies between the lower and upper bounds for each dimension in each bounding box
+    lower_bounds = bounding_boxes[:,:,0]  # Extract all lower bounds
+    upper_bounds = bounding_boxes[:,:,1]  # Extract all upper bounds
+    # Create a mask to check containment across all dimensions
+    contained = np.all((lower_bounds <= point) & (upper_bounds >= point), axis=1)
+
+    # Find the first bounding box in which the point is contained
+    indices = np.where(contained)[0]
+    if indices.size > 0:
+        return indices[0]
+    else:
+        return -1
