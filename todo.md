@@ -27,3 +27,4 @@
     - [ ] Experiment with the tree for real data
 - [ ] Do quantile conformal methods for the non-filled in areas in the table
 - [ ] Apply this method to studentized and cqr variants
+- [ ] Try the averaging method 
