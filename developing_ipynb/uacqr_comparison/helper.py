@@ -28,6 +28,18 @@ def generate_data(n, p, cond_exp, noise_sd_fn, x_dist = partial(np.random.unifor
     y = cond_exp(x)+noise
     return x,y
 
+# def covered(high_est, low_est, actual, alpha):
+#     return 1*((actual < high_est) & (actual > low_est))
+
+# def average_coverage(high_est, low_est, actual, alpha):
+#     return np.mean(covered(high_est, low_est, actual, alpha))
+
+def interval_width(high_est, low_est, actual, alpha):
+    return high_est - low_est
+
+def average_width(high_est, low_est, actual, alpha):
+    return np.mean(interval_width(high_est, low_est, actual, alpha))
+
 def interval_score_loss(high_est, low_est, actual, alpha):
     return high_est - low_est + 2/alpha*(low_est - actual)*(actual < low_est)+2/alpha*(actual - high_est)*(actual > high_est)
 

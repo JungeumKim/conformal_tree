@@ -191,7 +191,8 @@ class CTree:
             for idx in bin_idx:
                 scores_subset = scores[membership == idx]
                 # print(scores_subset)
-                C = np.quantile(scores_subset, 1-alpha)
+                m = np.sum(membership == idx)
+                C = np.quantile(scores_subset, np.ceil((1-alpha)*(m+1))/m)
                 self.offsets[idx] = C
 
                 y_lb -= C*(membership == idx)
@@ -200,7 +201,8 @@ class CTree:
             c_gap = np.minimum(np.abs(y_lb-y_calib), np.abs(y_ub-y_calib))
             if it != n_its - 1:
                 self.tree_model, membership = tree_utils.tree_membership(
-                    X_calib, c_gap, max_depth=20, max_leaf_nodes=(it+1)*2, min_samples_leaf=20
+                    # X_calib, c_gap, max_depth=20, max_leaf_nodes=4**(it+1), min_samples_leaf=20
+                    X_calib, c_gap, max_depth=4, max_leaf_nodes=8, min_samples_leaf=20
                 )
                 # print(f"MEMB: {membership}")
                 bin_idx = np.unique(membership)
@@ -236,35 +238,154 @@ class CTree:
         y_lb -= test_offsets
         y_ub += test_offsets
 
-        # for i,x_t in enumerate(X_test):
-        #     bin_x_t = find_bounding_box(self.tree_object.leaf_boundaries, x_t)
-        #     C = self.offsets[bin_x_t]
-        #     y_lb[i] = y_test_model[i] - C
-        #     y_ub[i] = y_test_model[i] + C
+        return y_lb, y_ub
+
+class ConformalForest:
+
+    model: Any
+    forest_model: Any
+    domain: np.ndarray
+    offsets: Any
+
+    def __init__(self, model, domain, *args, **kwargs):
+        """Conformal tree constructor
+
+        Args:
+            model (sklearn.base): Model endowed with predict function
+            domain (np.ndarray): bounding box of domain
+        """
+        self.model = model
+        self.domain = domain
+        self.offsets = None
+        pass
+
+    def calibrate(self, X_calib: np.ndarray, y_calib: np.ndarray, y_model: np.ndarray, alpha: float, n_its: int = 5):
+        """Calibrate to calibration data
+
+        Args:
+            X_calib (np.ndarray): covariates in calibration data
+            y_calib (np.ndarray): responses in calibration data
+            y_model (np.ndarray): estimated mean of model
+        """
+
+        # Calibrate by averaging: fit a random forest,
+        #
+        scores = np.abs(y_calib - y_model)
+        self.forest_model, forest_membership = tree_utils.forest_membership(X_calib, scores)
+
+        self.offsets = []
+        for i in range(self.forest_model.n_estimators):
+            membership = forest_membership[:,i]
+            bin_idx = np.unique(membership)
+            c_offsets = {}
+            for idx in bin_idx:
+                scores_subset = scores[membership == idx]
+                m = np.sum(membership == idx)
+                C = np.quantile(scores_subset, np.ceil((1-alpha)*(m+1))/m)
+                c_offsets[idx] = C
+
+            self.offsets.append(c_offsets)
+
+    def tree_interval(self, X_test: np.ndarray, tree_idx=0):
+        """Return a prediction interval for test data, from a single tree
+
+        Args:
+            X (np.ndarray): N x D array of test data
+        Returns:
+            np.ndarray: N x 2 array of upper and lower bounds for each x
+        """
+
+        offsets = self.offsets[tree_idx]
+
+        y_test_model = self.model.predict(X_test)
+
+        y_lb = np.copy(y_test_model)
+        y_ub = np.copy(y_test_model)
+
+        test_forest_leaf_idxs = self.forest_model.apply(X_test)
+
+        test_tree_leaf_idxs = test_forest_leaf_idxs[:,tree_idx]
+
+        lookup = np.vectorize(offsets.get)
+        test_offsets = lookup(test_tree_leaf_idxs)
+
+        y_lb -= test_offsets
+        y_ub += test_offsets
 
         return y_lb, y_ub
 
-def find_bounding_box(bounding_boxes, point):
-    """
-    Determines the index of the bounding box that contains the given point.
+    def combined_test_interval(self,
+                               X_test : np.ndarray,
+                               strategy: str = "average"):
 
-    Parameters:
-        bounding_boxes (np.ndarray): An array of shape (m, d, 2) where m is the number of boxes,
-                                     d is the dimensionality, and the last dimension stores [lower, upper] bounds.
-        point (np.ndarray): An array of shape (d,) representing the point.
+        if strategy not in ["average"]:
+            raise ValueError("Strategy not recognized")
 
-    Returns:
-        int: The index (1-based) of the first bounding box that contains the point, or -1 if no such box exists.
-    """
-    # Check if the point lies between the lower and upper bounds for each dimension in each bounding box
-    lower_bounds = bounding_boxes[:,:,0]  # Extract all lower bounds
-    upper_bounds = bounding_boxes[:,:,1]  # Extract all upper bounds
-    # Create a mask to check containment across all dimensions
-    contained = np.all((lower_bounds <= point) & (upper_bounds >= point), axis=1)
+        y_lbs = np.zeros((self.forest_model.n_estimators, X_test.shape[0]))
+        y_ubs = np.zeros((self.forest_model.n_estimators, X_test.shape[0]))
 
-    # Find the first bounding box in which the point is contained
-    indices = np.where(contained)[0]
-    if indices.size > 0:
-        return indices[0]
-    else:
-        return -1
+        for i in range(self.forest_model.n_estimators):
+            _y_lb, _y_ub = self.tree_interval(X_test, i)
+            y_lbs[i] = _y_lb
+            y_ubs[i] = _y_ub
+
+        # print(y_lbs.shape)
+        # print(y_ubs.shape)
+
+        return y_lbs, y_ubs
+
+        if strategy == "average":
+            y_lb = np.mean(y_lbs, axis=0)
+            y_ub = np.mean(y_ubs, axis=0)
+
+        elif strategy == "vote":
+            raise ValueError("Not implemented yet")
+
+        return y_lb, y_ub
+
+
+def majority_vote(a: np.ndarray,
+                  b: np.ndarray,
+                  w: np.ndarray = None,
+                  tau: float = 0.5):
+
+    if w is None:
+        w = np.ones(a.shape)
+
+    lower = []
+    upper = []
+
+    q = np.sort(np.concatenate((a,b)))
+    for i in range(1,2*len(a)):
+        if np.sum(w*((a <= (q[i-1] + q[i])/2 ) & (b >= (q[i-1] + q[i])/2 ))) > tau:
+            lower.append(q[i-1])
+            j = i
+            while (j < 2*len(a) and
+                np.sum(w*((a <= (q[j-1] + q[j])/2 ) & (b >= (q[j-1] + q[j])/2 ))) > tau):
+
+                j += 1
+            i = j
+            upper.append(q[i-1])
+        else:
+            i += 1
+
+    return lower, upper
+
+
+def test_forest():
+    X = np.random.uniform(0,1,200)
+    y = np.random.normal(0,10,200) + X
+    X = X.reshape(200,1)
+
+    from sklearn import ensemble
+    rfm = ensemble.RandomForestRegressor()
+    rfm.fit(X,y)
+    cf = ConformalForest(rfm, np.array([[0,1]]))
+
+    cf.calibrate(X,y, rfm.predict(X), 0.1)
+
+    X_test = np.random.uniform(0,1,200)
+    y_test = np.random.normal(0,10,200) + X_test
+    X_test = X_test.reshape(200,1)
+
+    return cf.combined_test_interval(X_test)

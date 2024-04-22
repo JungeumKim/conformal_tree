@@ -1,7 +1,25 @@
 from sklearn import tree
+from sklearn import ensemble
 import matplotlib.pyplot as plt
 import numpy as np
 import torch
+
+def forest_membership(data, residuals, max_depth=20,
+                    max_leaf_nodes=80,
+                    min_samples_leaf=20,
+                    n_estimators=100):
+
+    rf_model = ensemble.RandomForestRegressor(
+        max_depth=max_depth,
+        max_leaf_nodes=max_leaf_nodes,
+        min_samples_leaf=min_samples_leaf,
+        n_estimators=n_estimators
+    )
+
+    rf_model.fit(data, residuals)
+
+    membership = rf_model.apply(data)
+    return rf_model, membership
 
 
 def tree_membership(data,c_gap,  max_depth=20, 

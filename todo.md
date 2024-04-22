@@ -19,13 +19,13 @@
 
 
 ## Simulations
-- [ ] Implement separate error metrics:
+- [x] Implement separate error metrics:
     - [x] Interval score length
     - Interval width
     - Coverage
-- [ ] More simulation data in multidimensional setting to better understand
-    - [ ] Experiment with the tree for real data
+- [x] More simulation data in multidimensional setting to better understand
+    - [x] Experiment with the tree for real data
 - [ ] Do quantile conformal methods for the non-filled in areas in the table
 - [ ] Apply this method to studentized and cqr variants
-- [ ] Try the averaging method 
-- [ ] Add the conditional mean \hat{f} to the sin simulations
+- [x] Try the averaging method 
+- [x] Add the conditional mean \hat{f} to the sin simulations

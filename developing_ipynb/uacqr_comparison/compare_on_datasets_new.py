@@ -9,7 +9,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '/Users/seanohagan/proje
 sys.path.append(os.path.join(os.path.dirname(__file__), '/Users/seanohagan/projects/conformal_tree/'))
 
 from datasets import GetDataset
-from conformal_tree.conformal_tree import CTree
+from conformal_tree.conformal_tree import CTree, ConformalForest
 
 import helper
 from tqdm import tqdm
@@ -17,7 +17,7 @@ from tqdm import tqdm
 
 #datasets = ['bike', 'bio', 'community', 'concrete', 'homes', 'star', 'test']
 #datasets = ['test']
-datasets = ['s1', 's2', 's3', 'test', 'bike', 'bio', 'community', 'concrete', 'homes', 'star', 'test']
+datasets = ['s1', 's2', 's3', 'test', 'bike', 'bio', 'community', 'concrete', 'homes', 'star']
 
 
 alpha = 0.1
@@ -28,13 +28,16 @@ calibration_size = 0.40
 test_size = 0.20
 N_RUNS = 10  # Number of runs for the simulation
 
-# Initialize a dictionary to accumulate results
-all_results = {dataset: {'isl_cp': [], 'isl_ctree': [], 'isl_studentized': []} for dataset in datasets}
 
-for _ in tqdm(range(N_RUNS)):
-    for dataset in datasets:
+methods = ["cp", "ctree", "forest", "student(tree)", "student(forest)"]
+metrics = ["width", "coverage", "isl"]
+
+res = np.zeros((N_RUNS, len(datasets), len(methods), len(metrics)))
+
+for run in tqdm(range(N_RUNS)):
+    for d_idx, dataset in enumerate(datasets):
         X, y = GetDataset(dataset)
-        if _ == 0:
+        if run == 0:
             print(X.shape)
         domain = np.column_stack((np.min(X, axis=0), np.max(X, axis=0)))
 
@@ -51,20 +54,46 @@ for _ in tqdm(range(N_RUNS)):
 
         y_model_calib = model.predict(X_calib)
         scores = np.abs(y_calib - y_model_calib)
-        gap = np.quantile(scores, 1 - alpha)
+        n = X_train.shape[0]
+        gap = np.quantile(scores, np.ceil((1 - alpha)*(n+1))/n)
 
         y_model_test = model.predict(X_test)
         y_test_lb_cp = y_model_test - gap
         y_test_ub_cp = y_model_test + gap
-        isl_cp = helper.average_interval_score_loss(y_test_ub_cp, y_test_lb_cp, y_test, alpha)
+
+        # Conformal prediction results
+        res[run, d_idx, 0, :] = [
+            helper.average_width(y_test_ub_cp, y_test_lb_cp, y_test, alpha),
+            helper.average_coverage(y_test_ub_cp, y_test_lb_cp, y_test),
+            helper.average_interval_score_loss(y_test_ub_cp, y_test_lb_cp, y_test, alpha)
+        ]
 
         ct = CTree(model, domain)
         y_lb_calib, y_ub_calib, c_g = ct.calibrate(X_calib, y_calib, y_model_calib, alpha)
         y_test_lb_ctree, y_test_ub_ctree = ct.test_interval(X_test)
-        isl_ctree = helper.average_interval_score_loss(y_test_ub_ctree, y_test_lb_ctree, y_test, alpha)
 
-        # Studentized
-        spread_model = RandomForestRegressor(min_samples_leaf=2, n_estimators=100, max_features='sqrt')
+        # Conformal Tree results
+        res[run, d_idx, 1, :] = [
+            helper.average_width(y_test_ub_ctree, y_test_lb_ctree, y_test, alpha),
+            helper.average_coverage(y_test_ub_ctree, y_test_lb_ctree, y_test),
+            helper.average_interval_score_loss(y_test_ub_ctree, y_test_lb_ctree, y_test, alpha)
+        ]
+        # Conformal Forest
+        cf = ConformalForest(model, domain)
+        cf.calibrate(X_calib, y_calib, y_model_calib, alpha)
+        y_test_lb_cforest, y_test_ub_cforest = cf.combined_test_interval(X_test)
+
+        # Conformal Forest results
+        res[run, d_idx, 2, :] = [
+            helper.average_width(y_test_ub_cforest, y_test_lb_cforest, y_test, alpha),
+            helper.average_coverage(y_test_ub_cforest, y_test_lb_cforest, y_test),
+            helper.average_interval_score_loss(y_test_ub_cforest, y_test_lb_cforest, y_test, alpha)
+        ]
+
+        # Studentized residual results
+        from sklearn.tree import DecisionTreeRegressor
+        spread_model = DecisionTreeRegressor(max_depth=20, max_leaf_nodes=4**(4+1), min_samples_leaf=20)
+
         resid_response_train = np.abs(y_train - model.predict(X_train))
         spread_model.fit(X_train, resid_response_train)
 
@@ -75,22 +104,55 @@ for _ in tqdm(range(N_RUNS)):
         y_spread_model_test = spread_model.predict(X_test)
         y_test_lb_studentized = y_model_test - (y_spread_model_test*qhat)
         y_test_ub_studentized = y_model_test + (y_spread_model_test*qhat)
-        isl_studentized = helper.average_interval_score_loss(y_test_ub_studentized, y_test_lb_studentized, y_test, alpha)
 
-        all_results[dataset]['isl_cp'].append(isl_cp)
-        all_results[dataset]['isl_ctree'].append(isl_ctree)
-        all_results[dataset]['isl_studentized'].append(isl_studentized)
+        # Studentized residual results
+        res[run, d_idx, 3, :] = [
+            helper.average_width(y_test_ub_studentized, y_test_lb_studentized, y_test, alpha),
+            helper.average_coverage(y_test_ub_studentized, y_test_lb_studentized, y_test),
+            helper.average_interval_score_loss(y_test_ub_studentized, y_test_lb_studentized, y_test, alpha)
+        ]
 
-# Calculate average results over all runs
-averaged_results = []
-for dataset, metrics in all_results.items():
-    avg_isl_cp = np.mean(metrics['isl_cp'])
-    avg_isl_ctree = np.mean(metrics['isl_ctree'])
-    avg_isl_studentized = np.mean(metrics['isl_studentized'])
-    averaged_results.append([dataset, avg_isl_cp, avg_isl_ctree, avg_isl_studentized])
+        # Studentized residuals (forest)
+        spread_model = RandomForestRegressor(min_samples_leaf=2, n_estimators=100, max_features='sqrt')
 
-# Create a DataFrame with the averaged results
-df_results = pd.DataFrame(averaged_results, columns=['dataset', 'isl_cp', 'isl_ctree', 'isl_studentized'])
+        resid_response_train = np.abs(y_train - model.predict(X_train))
+        spread_model.fit(X_train, resid_response_train)
 
-print(df_results)
-print(df_results.to_latex())
+        est_spreads_calib = spread_model.predict(X_calib)
+        est_resids_calib = np.abs(y_calib - model.predict(X_calib))/est_spreads_calib
+        qhat = np.sort(est_resids_calib)[int(np.ceil((1-alpha)*(X_calib.shape[0] + 1)))]
+
+        y_spread_model_test = spread_model.predict(X_test)
+        y_test_lb_studentized = y_model_test - (y_spread_model_test*qhat)
+        y_test_ub_studentized = y_model_test + (y_spread_model_test*qhat)
+
+        # Studentized residual results
+        res[run, d_idx, 4, :] = [
+            helper.average_width(y_test_ub_studentized, y_test_lb_studentized, y_test, alpha),
+            helper.average_coverage(y_test_ub_studentized, y_test_lb_studentized, y_test),
+            helper.average_interval_score_loss(y_test_ub_studentized, y_test_lb_studentized, y_test, alpha)
+        ]
+
+
+mean_res = np.mean(res, axis=0)
+
+metric_dataframes = {}
+for metric_index, metric in enumerate(metrics):
+    # Extract the data for the current metric across all methods and datasets
+    data = mean_res[:, :, metric_index]
+
+    # Create a DataFrame for the current metric
+    df_metric = pd.DataFrame(data=data, columns=methods, index=datasets)
+    df_metric.reset_index(inplace=True)
+    df_metric.rename(columns={'index': 'dataset'}, inplace=True)
+
+    # Store the DataFrame in the dictionary
+    metric_dataframes[metric] = df_metric
+    df_metric.to_csv(f"results/{metric}_results.csv", index=False)
+
+
+# Print the DataFrames and convert them to LaTeX if needed
+for metric, df in metric_dataframes.items():
+    print(f"DataFrame for {metric}:")
+    print(df)
+    print(df.to_latex(index=False))
