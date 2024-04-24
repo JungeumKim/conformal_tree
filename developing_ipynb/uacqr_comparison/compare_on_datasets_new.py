@@ -49,8 +49,22 @@ for run in tqdm(range(N_RUNS)):
             y_calib /= np.mean(np.abs(y_calib))
             y_test /= np.mean(np.abs(y_test))
 
-        model = RandomForestRegressor(min_samples_leaf=2, n_estimators=100, max_features='sqrt')
+        # Random forest model
+        # model = RandomForestRegressor(min_samples_leaf=2, n_estimators=100, max_features='sqrt')
+
+        # Overfitting decision tree
+        # import warnings
+        # warnings.simplefilter("ignore", RuntimeWarning)
+
+        from sklearn.tree import DecisionTreeRegressor
+        # model = DecisionTreeRegressor(max_depth=None, min_samples_split=2, min_samples_leaf=1)
+        # model.fit(X_train, y_train)
+        # discount = 0.9
+        # max_leaves = int(discount * model.get_n_leaves())
+        # max_depth = int(discount * model.get_depth())
+        model = DecisionTreeRegressor(max_depth=None, min_samples_split=2, min_samples_leaf=2)
         model.fit(X_train, y_train)
+
 
         y_model_calib = model.predict(X_calib)
         scores = np.abs(y_calib - y_model_calib)

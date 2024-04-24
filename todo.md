@@ -1,7 +1,7 @@
 
 # Thursday April 18, 2024
 
-- [ ] Expand on the distinction between conformal tree and the studentized residuals method with a tree modeling $\hat\sigma$ (write down what I explained to Jungeum in my note)
+- [x] Expand on the distinction between conformal tree and the studentized residuals method with a tree modeling $\hat\sigma$ (write down what I explained to Jungeum in my note)
 
 
 ## Literature to check:
@@ -13,9 +13,9 @@
 - [ ] Rina paper with distribution shift and discretization
 
 ## Idea
-- [ ] Think of the averaging method
-- [ ] Theory for averaging method
-- [ ] Think about the discontinuity
+- [x] Think of the averaging method
+- [x] Theory for averaging method
+- [x] Think about the discontinuity
 
 
 ## Simulations
