@@ -1,4 +1,19 @@
 
+# Thursday April 25, 2024
+
+## Literature review:
+ - Write a detailed list of the methodologies in the other relevant papers, and how they differ from our proposed method.
+ 
+ Papers:
+ - [ ] Chernozhukov
+ - [ ] Fong and Holmes
+ - [ ] Jing Lei
+ - [ ] Gibbs and Candes
+
+## Simulation:
+- Implement the classification idea
+- Figure out and implement the weighted majority algorithm
+
 # Thursday April 18, 2024
 
 - [x] Expand on the distinction between conformal tree and the studentized residuals method with a tree modeling $\hat\sigma$ (write down what I explained to Jungeum in my note)
