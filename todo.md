@@ -5,14 +5,23 @@
  - Write a detailed list of the methodologies in the other relevant papers, and how they differ from our proposed method.
  
  Papers:
+ - [ ] Jing Lei - understand the proof and comp.
+ - [ ] Gibbs and Candes: - understand the proof and comp + why the equivalence happens (using f)
  - [ ] Chernozhukov
- - [ ] Fong and Holmes
- - [ ] Jing Lei
- - [ ] Gibbs and Candes
-
+ - [v] Fong and Holmes
+ - [ ] Why the forest average would violate while their integration(?) method would not. What is the intuition
+       
 ## Simulation:
 - Implement the classification idea
 - Figure out and implement the weighted majority algorithm
+
+## Minor things
+- Tables: 2 decimal plcae with (min, max) in smaller font size
+- Table 4: what about underfit?
+- Fortify the point-guaranttee impossibility by adding Vovk 2012 and Barber 2020 (from Gibbs)
+
+## Final challenge
+- Later, we will need to come up with an idea to handle covariate shift.
 
 # Thursday April 18, 2024
 
