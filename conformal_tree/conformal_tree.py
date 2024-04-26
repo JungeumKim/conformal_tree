@@ -4,6 +4,8 @@ from collections import deque
 
 from conformal_tree._utils import tree_utils
 from sklearn.tree import _tree as ctree
+from IPython.core.debugger import set_trace
+
 
 """NOTE: Currently Tree, AABB are not used. Only CTree class is used for now"""
 
@@ -389,3 +391,94 @@ def test_forest():
     X_test = X_test.reshape(200,1)
 
     return cf.combined_test_interval(X_test)
+
+
+
+class ConformalClassifier:
+
+    tree_object: Any
+    tree_model: Any
+    bins: Any
+    deltas: Any
+    domain: np.ndarray
+    offsets: np.ndarray
+    classification_model: Any
+
+    def __init__(self, model, domain, *args, **kwargs):
+        """Conformal tree constructor
+
+        Args:
+            model (sklearn.base): Model endowed with predict function
+            domain (np.ndarray): bounding box of domain
+        """
+        self.model = model
+        self.domain = domain
+        self.offsets = None
+        pass
+
+    def calibrate(self, X_calib: np.ndarray,
+                  y_calib: np.ndarray,
+                  y_model: np.ndarray,
+                  alpha: float):
+        """Calibrate to calibration data
+
+        Args:
+            X_calib (np.ndarray): covariates in calibration data
+            y_calib (np.ndarray): responses in calibration data
+            y_model (np.ndarray): estimated mean of model
+        """
+
+
+
+        scores = np.abs(y_calib-y_model)
+
+        sorted_idxs = np.argsort(scores)
+
+        from sklearn.tree import DecisionTreeRegressor
+        _tree = DecisionTreeRegressor(max_leaf_nodes = 10, min_samples_leaf=20)
+        pseudo_X = np.arange(X_calib.shape[0]).reshape(-1,1)
+        _tree.fit(pseudo_X, scores[sorted_idxs])
+
+        leaf_class = np.zeros(len(sorted_idxs))
+        leaf_class[sorted_idxs] = _tree.apply(pseudo_X)
+
+        from sklearn.ensemble import RandomForestClassifier
+        self.classification_model = RandomForestClassifier(n_estimators=10)
+        self.classification_model.fit(X_calib, leaf_class)
+
+        unique_classes = np.unique(leaf_class)
+        self.offsets = {}
+
+        print(f"Total classes: {len(unique_classes)}")
+        for i,cls in enumerate(unique_classes):
+            scores_subset = scores[leaf_class == cls]
+            m = np.sum(leaf_class == cls)
+            C = np.quantile(scores_subset, np.ceil((1-alpha)*(m+1))/m)
+            self.offsets[cls] = C
+
+        pass
+
+    def test_interval(self, X_test: np.ndarray):
+        """Return a prediction interval for test data
+
+        Args:
+            X (np.ndarray): N x D array of test data
+        Returns:
+            np.ndarray: N x 2 array of upper and lower bounds for each x
+        """
+
+        y_test_model = self.model.predict(X_test)
+
+        y_lb = np.copy(y_test_model)
+        y_ub = np.copy(y_test_model)
+
+        test_classes = self.classification_model.predict(X_test)
+
+        lookup = np.vectorize(self.offsets.get)
+        test_offsets = lookup(test_classes)
+
+
+        y_lb = y_lb.flatten() - test_offsets.flatten()
+        y_ub = y_ub.flatten() + test_offsets.flatten()
+
+        return y_lb, y_ub

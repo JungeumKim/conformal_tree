@@ -9,7 +9,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '/Users/seanohagan/proje
 sys.path.append(os.path.join(os.path.dirname(__file__), '/Users/seanohagan/projects/conformal_tree/'))
 
 from datasets import GetDataset
-from conformal_tree.conformal_tree import CTree, ConformalForest
+from conformal_tree.conformal_tree import CTree, ConformalForest, ConformalClassifier
 
 import helper
 from tqdm import tqdm
@@ -29,7 +29,7 @@ test_size = 0.20
 N_RUNS = 10  # Number of runs for the simulation
 
 
-methods = ["cp", "ctree", "forest", "student(tree)", "student(forest)"]
+methods = ["cp", "ctree", "forest", "student(tree)", "student(forest)", "classifier"]
 metrics = ["width", "coverage", "isl"]
 
 res = np.zeros((N_RUNS, len(datasets), len(methods), len(metrics)))
@@ -64,6 +64,11 @@ for run in tqdm(range(N_RUNS)):
         # max_depth = int(discount * model.get_depth())
         model = DecisionTreeRegressor(max_depth=None, min_samples_split=2, min_samples_leaf=2)
         model.fit(X_train, y_train)
+
+        # Neural network
+        # from sklearn.neural_network import MLPRegressor
+        # model = MLPRegressor(hidden_layer_sizes=(128,256,512, 1024))
+        # model.fit(X_train, y_train)
 
 
         y_model_calib = model.predict(X_calib)
@@ -145,6 +150,18 @@ for run in tqdm(range(N_RUNS)):
             helper.average_width(y_test_ub_studentized, y_test_lb_studentized, y_test, alpha),
             helper.average_coverage(y_test_ub_studentized, y_test_lb_studentized, y_test),
             helper.average_interval_score_loss(y_test_ub_studentized, y_test_lb_studentized, y_test, alpha)
+        ]
+
+        # Conformal Classifer
+        cc = ConformalClassifier(model, domain)
+        cc.calibrate(X_calib, y_calib, y_model_calib, alpha)
+        y_test_lb_cclass, y_test_ub_cclass = cc.test_interval(X_test)
+
+        # Conformal Classifier results
+        res[run, d_idx, 5, :] = [
+            helper.average_width(y_test_ub_cclass, y_test_lb_cclass, y_test, alpha),
+            helper.average_coverage(y_test_ub_cclass, y_test_lb_cclass, y_test),
+            helper.average_interval_score_loss(y_test_ub_cclass, y_test_lb_cclass, y_test, alpha)
         ]
 
 
