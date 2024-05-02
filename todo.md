@@ -5,7 +5,7 @@
 - Exchangeability is violated because the tree depends on calibration data but does not depend on $X_{n+1}$
 - If the grid/partition were fixed ahead of time, then everything should work (this is the same as Gibbs, Wasserman)
 - Using a fixed depth complete dyadic tree is essentially the same as this.
-- We could get around this by essentially "marginalizing the tree" by refiting the tree many times for various realizations of $y_{n+1}$ and computing the interval similarly to full conformal prediction. However, this may be not feasible because the tree would need to be fit $N\times |G|$ times where $G$ is a grid
+- We could get around this by essentially "marginalizing the tree" by refiting the tree many times for various realizations of $y_{n+1}$ and computing the interval similarly to full conformal prediction. However, this may be not feasible because the tree would need to be fit $N\times |G|$ times where $G$ is a grid. Such a method would likely still yield coverage, with a proof similar to that of the full conformal proof. But it would not be computationally feasible.
 - Now, if we can come up with a class of tree and splitting rule such that the partition will never change from a different value of $y_{n+1}$, then we only need to fit a tree once per each test point, making it feasible.
 
 ## Todo
