@@ -1,4 +1,25 @@
 
+# Thursday May 02, 2024
+
+## Idea
+- Exchangeability is violated because the tree depends on calibration data but does not depend on $X_{n+1}$
+- If the grid/partition were fixed ahead of time, then everything should work (this is the same as Gibbs, Wasserman)
+- Using a fixed depth complete dyadic tree is essentially the same as this.
+- We could get around this by essentially "marginalizing the tree" by refiting the tree many times for various realizations of $y_{n+1}$ and computing the interval similarly to full conformal prediction. However, this may be not feasible because the tree would need to be fit $N\times |G|$ times where $G$ is a grid
+- Now, if we can come up with a class of tree and splitting rule such that the partition will never change from a different value of $y_{n+1}$, then we only need to fit a tree once per each test point, making it feasible.
+
+## Todo
+
+- [ ] Consider a dyadic tree. We need to investigate the default splitting rule, and come up with a modified splitting rule that has the property that changing $y_{n+1}$ value will not change the shape of the tree. We may need some assumptions, such as a minimum number of samples in each leaf.
+
+- [ ] Once we have the splitting rule, we need to implement the dyadic tree with the splitting rule and test the method. We can first use a small calibration set size as it may make it more clear if there is miscoverage.
+
+- [ ] Proof of this method that sort of "marginalizes" the tree in a full-conformal type of way will actually achieve the coverage
+
+- Future: determine a splitting rule or criterion for general CART
+
+
+
 # Thursday April 25, 2024
 
 ## Literature review:
@@ -6,8 +27,8 @@
  
  Papers:
  - [ ] Jing Lei - understand the proof and comp.
- - [ ] Gibbs and Candes: - understand the proof and comp + why the equivalence happens (using f)
- - [ ] Chernozhukov
+ - [x] Gibbs and Candes: - understand the proof and comp + why the equivalence happens (using f)
+ - [x] Chernozhukov
  - [v] Fong and Holmes
  - [ ] Why the forest average would violate while their integration(?) method would not. What is the intuition
        
