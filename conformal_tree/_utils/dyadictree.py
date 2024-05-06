@@ -50,8 +50,6 @@ class DyadicTreeRegressor(BaseEstimator):
         self.min_samples_leaf = min_samples_leaf
         self.max_leaf_nodes = max_leaf_nodes
 
-        self.criterion = self._criterion_variance_reduction
-
     def get_depth(self):
         if self._tree is None:
             raise ValueError("DyadicTreeRegressor has not been fitted")
@@ -89,7 +87,7 @@ class DyadicTreeRegressor(BaseEstimator):
                 min_samples_left_child_check = len(self._indices_in_region(X, self._get_region_from_node(left_child(leaf)))) >= self.min_samples_split
                 min_samples_right_child_check = len(self._indices_in_region(X, self._get_region_from_node(right_child(leaf)))) >= self.min_samples_split
                 if depth_check and min_samples_split_check and min_samples_left_child_check and min_samples_right_child_check:
-                    candidate_leaves_criteria[leaf] = self.criterion(X, y, leaf)
+                    candidate_leaves_criteria[leaf] = self._criterion_wrapper(X, y, leaf)
 
             # candidate_leaves_criteria = {leaf: self.criterion(X, y, leaf) for leaf in current_leaves if leaf[0] < self.max_depth}
             if len(candidate_leaves_criteria) == 0:
@@ -133,7 +131,7 @@ class DyadicTreeRegressor(BaseEstimator):
 
         return region
 
-    def _criterion_variance_reduction(self, X, y, node):
+    def _criterion_wrapper(self, X, y, node):
         h, i = node
         region_parent = self._get_region_from_node((h,i))
         region_left_child = self._get_region_from_node((h+1,2*i-1))
@@ -143,11 +141,7 @@ class DyadicTreeRegressor(BaseEstimator):
         l_child_inds = self._indices_in_region(X, region_left_child)
         r_child_inds = self._indices_in_region(X, region_right_child)
 
-        var_reduction = (np.var(y[parent_inds]) -
-            (((len(l_child_inds)/len(X)) * np.var(y[l_child_inds])) +
-             ((len(r_child_inds)/len(X))*np.var(y[r_child_inds]))))
-
-        return var_reduction
+        return self.criterion(X, y, parent_inds, l_child_inds, r_child_inds)
 
 
 
@@ -181,3 +175,14 @@ def left_child(node):
 def right_child(node):
     h,i = node
     return (h+1, 2*i)
+
+
+def criterion_variance_reduction(X, y, parent_inds, l_child_inds, r_child_inds):
+    var_reduction = (np.var(y[parent_inds]) -
+            (((len(l_child_inds)/len(X)) * np.var(y[l_child_inds])) +
+             ((len(r_child_inds)/len(X))*np.var(y[r_child_inds]))))
+    return var_reduction
+
+
+def criterion_loovr(X, y, parent_inds, l_child_inds, r_child_inds):
+    pass
