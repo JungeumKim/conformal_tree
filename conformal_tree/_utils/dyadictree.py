@@ -158,7 +158,7 @@ class DyadicTreeRegressor(BaseEstimator):
         indices = np.nonzero(within_all_bounds)[0]
         return indices
 
-    def plot(self,ax):
+    def plot(self,ax, color="skyblue", alpha=0.5):
         if self.domain.shape[0] > 1:
             raise ValueError("Plotting currently only supports one dimensional X space")
         leaves = []
@@ -166,7 +166,7 @@ class DyadicTreeRegressor(BaseEstimator):
         regions = [self._get_region_from_node(leaf) for leaf in leaves]
         for i,reg in enumerate(regions):
             val = self._tree[leaves[i]]
-            ax.fill_between([reg[0][0], reg[0][1]], [val, val], color='skyblue', alpha=0.5, step='post')
+            ax.fill_between([reg[0][0], reg[0][1]], [val, val], color=color, alpha=alpha, step='post')
 
 def left_child(node):
     h,i = node
@@ -183,6 +183,33 @@ def criterion_variance_reduction(X, y, parent_inds, l_child_inds, r_child_inds):
              ((len(r_child_inds)/len(X))*np.var(y[r_child_inds]))))
     return var_reduction
 
+def criterion_loo_variance_reduction(X, y, parent_inds, l_child_inds, r_child_inds):
+    min_var_reduction = float('inf')  # Initialize to a large number
 
-def criterion_loovr(X, y, parent_inds, l_child_inds, r_child_inds):
-    pass
+    for i in parent_inds:
+        parent_inds_excl = [idx for idx in parent_inds if idx != i]
+        l_child_inds_excl = [idx for idx in l_child_inds if idx != i]
+        r_child_inds_excl = [idx for idx in r_child_inds if idx != i]
+
+        if len(parent_inds_excl) > 0:  # Ensure there are still data points left
+            total_variance = np.var(y[parent_inds_excl])
+            if len(l_child_inds_excl) > 0:
+                left_variance = np.var(y[l_child_inds_excl])
+            else:
+                left_variance = 0  # No variance if no data points
+
+            if len(r_child_inds_excl) > 0:
+                right_variance = np.var(y[r_child_inds_excl])
+            else:
+                right_variance = 0  # No variance if no data points
+
+            weighted_variance = ((len(l_child_inds_excl) / len(parent_inds_excl)) * left_variance +
+                                 (len(r_child_inds_excl) / len(parent_inds_excl)) * right_variance)
+
+            var_reduction = total_variance - weighted_variance
+
+            # Update the minimum variance reduction found
+            if var_reduction < min_var_reduction:
+                min_var_reduction = var_reduction
+
+    return min_var_reduction
