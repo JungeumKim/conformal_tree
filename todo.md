@@ -1,4 +1,21 @@
 
+# Thursday May 09, 2024
+
+- Use a splitting criterion that is ONLY dependent on the max and min values within a leaf node, with a guaranteed minimum number of leaves in each bin $m$
+- Then, with probability $1-2/m$, we have that the new point $X_{n+1},y_{n+1}$ will not be the most extreme point in the bin. Thus, since the partitioning rule does not depend on points that are not the most extreme, it will not affect the partition.
+- For the theorem
+$\mathbb{E}[P(y_{n+1}\in C)] = P(y_{n+1}\in C \mid y_{n+1} \in A)P(y_{n+1}\in A) + P(y_{n+1}\in C \mid y_{n+1}\not\in A)P(y_{n+1}\not\in A)$
+etc
+
+
+TODO
+- [ ] Implement the new criterion
+- [ ] Do numerical experiments, on the benchmark datasets
+- [ ] Find a `flagship' new dataset for a cool numerical experiment -- a deep learning example where the training set is unavailable and calibration set is limited, would be ideal!!!
+- [ ] Write a persuave piece on why splitting on the calibration data is useful :)
+- [ ] Think more about the combining intervals and forest idea
+
+
 # Thursday May 02, 2024
 
 ## Idea
@@ -10,9 +27,9 @@
 
 ## Todo
 
-- [ ] Consider a dyadic tree. We need to investigate the default splitting rule, and come up with a modified splitting rule that has the property that changing $y_{n+1}$ value will not change the shape of the tree. We may need some assumptions, such as a minimum number of samples in each leaf.
+- [x] Consider a dyadic tree. We need to investigate the default splitting rule, and come up with a modified splitting rule that has the property that changing $y_{n+1}$ value will not change the shape of the tree. We may need some assumptions, such as a minimum number of samples in each leaf.
 
-- [ ] Once we have the splitting rule, we need to implement the dyadic tree with the splitting rule and test the method. We can first use a small calibration set size as it may make it more clear if there is miscoverage.
+- [x] Once we have the splitting rule, we need to implement the dyadic tree with the splitting rule and test the method. We can first use a small calibration set size as it may make it more clear if there is miscoverage.
 
 - [ ] Proof of this method that sort of "marginalizes" the tree in a full-conformal type of way will actually achieve the coverage
 

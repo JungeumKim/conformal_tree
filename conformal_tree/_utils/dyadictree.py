@@ -158,7 +158,7 @@ class DyadicTreeRegressor(BaseEstimator):
         indices = np.nonzero(within_all_bounds)[0]
         return indices
 
-    def plot(self,ax, color="skyblue", alpha=0.5):
+    def plot(self,ax, color="skyblue", alpha=0.5, label=None):
         if self.domain.shape[0] > 1:
             raise ValueError("Plotting currently only supports one dimensional X space")
         leaves = []
@@ -166,7 +166,8 @@ class DyadicTreeRegressor(BaseEstimator):
         regions = [self._get_region_from_node(leaf) for leaf in leaves]
         for i,reg in enumerate(regions):
             val = self._tree[leaves[i]]
-            ax.fill_between([reg[0][0], reg[0][1]], [val, val], color=color, alpha=alpha, step='post')
+            labv = label if i == 0 else None
+            _ = ax.fill_between([reg[0][0], reg[0][1]], [val, val], color=color, alpha=alpha, step='post', label=labv)
 
 def left_child(node):
     h,i = node
