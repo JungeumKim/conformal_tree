@@ -1,4 +1,28 @@
 
+# Thursday May 16, 2024
+
+- [ ] Organize the paper into a manuscript with proper sections
+
+- [ ] Clearly motivate the setting and compare with studentized + Gibbs to explain why it is needed
+- [ ] Include a well-written comparison with Gibbs
+
+- [ ] Fix the issue of one additional point changing the candidacy for a node to split
+- Idea 1: random splitting candidacy
+- Idea 2: fitting the tree separately with each X_{n+1} included, with a made up non-extreme y-value
+- Idea 3: bounding the probability that this will happen
+
+- [ ] Write the proof formally, carefully, and clearly
+
+- [ ] Aggregation idea - implementation and theory and simulation
+- [ ] Compare with Gibbs in simulations as well
+
+- [ ] Main body flagship experiment: deep learning experiment
+- [ ] Main body simulation: comparison of results directly comparable in the same setting
+- [ ] Appendix simulation: Huge comparison with all methods
+
+Note: Classification?
+
+
 # Thursday May 09, 2024
 
 - Use a splitting criterion that is ONLY dependent on the max and min values within a leaf node, with a guaranteed minimum number of leaves in each bin $m$
@@ -9,10 +33,10 @@ etc
 
 
 TODO
-- [ ] Implement the new criterion
-- [ ] Do numerical experiments, on the benchmark datasets
+- [x] Implement the new criterion
+- [x] Do numerical experiments, on the benchmark datasets
 - [ ] Find a `flagship' new dataset for a cool numerical experiment -- a deep learning example where the training set is unavailable and calibration set is limited, would be ideal!!!
-- [ ] Write a persuave piece on why splitting on the calibration data is useful :)
+- [x] Write a persuave piece on why splitting on the calibration data is useful :)
 - [ ] Think more about the combining intervals and forest idea
 
 
