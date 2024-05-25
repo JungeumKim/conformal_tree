@@ -1,12 +1,26 @@
+# Thursday May 23, 2024
+
+- 1.) [ ] Fix and rewrite the proof that the partition will stay the same: include the binomial coefficient
+
+- 2.) [ ] Better comparison tables with Gibbs/etc
+- Write a full experiments section under regression
+
+In main body: compare with standard CP, studentized residuals, and gibbs
+In appendix: the same + quantile + raphael + wrapper of our method with their method
+
+- 3.) [ ] Forest/aggregation idea: need to check that it makes sense, write proposition and proof
+- We bootstrap to make a different tree, but then we need to use the original (unbootstrapped?) calibration data in order to fit the new tree?
+
+
 
 # Thursday May 16, 2024
 
-- [ ] Organize the paper into a manuscript with proper sections
+- [x] Organize the paper into a manuscript with proper sections
 
-- [ ] Clearly motivate the setting and compare with studentized + Gibbs to explain why it is needed
+- [x] Clearly motivate the setting and compare with studentized + Gibbs to explain why it is needed
 - [ ] Include a well-written comparison with Gibbs
 
-- [ ] Fix the issue of one additional point changing the candidacy for a node to split
+- [x] Fix the issue of one additional point changing the candidacy for a node to split
 - Idea 1: random splitting candidacy
 - Idea 2: fitting the tree separately with each X_{n+1} included, with a made up non-extreme y-value
 - Idea 3: bounding the probability that this will happen
