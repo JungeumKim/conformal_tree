@@ -1,3 +1,51 @@
+
+* Thursday June 13, 2024
+
+
+
+** Experiments
+*** Add exposition for both experiments describing the effectiveness of GPT as a base classifier, eg comparison with standard ML or with naive techniques
+*** Investigate the overcoverage by trying leave-one-out coverage
+*** Recreate Figure 8 for the politics example where we split in time-periods for the time dependent model
+*** Use the proportion of test points that have sets that are smaller as a metric
+- Use this for all models:
+- Real/synthetic data comparison
+- Politics
+- Diagnosis experiment
+*** For politics experiment, provide more evidence that GPT knows what these scores are
+- GPT defines these scores as, etc etc. Need proof that it knows what they are and that the resulting groups of states that it gives are representative of this knowledge
+
+
+
+** Writing
+*** Algorithm 2 - include one line for stopping criterion and describe what it is
+*** Change notation to use (0,0) for the root node of the tree
+*** Work on the introduction
+- More scientific
+- compress the references
+- Look for literature for Gen AI UQ w/ conformal
+- Check writing style of Chernozhukov
+*** Remove aleatoric/epistemic words or use a citation?
+Change them to plain English descriptions of what they mean "variance increases with X" or "Heteroskedastic noise"
+*** Add remark 'we do not suggest this, but if people do use it, they should have UQ etc'
+
+
+
+
+
+** Figures
+*** Figure 1 - revised into two figures
+**** Fig 1.1 : Sketch of the pipeline (Jungeum)
+**** Fig 1.2 : Local conformal plots (3x2 grid, see page 4 of pdf)
+
+
+
+
+
+
+
+
+
 # Thursday May 23, 2024
 
 - 1.) [ ] Fix and rewrite the proof that the partition will stay the same: include the binomial coefficient
