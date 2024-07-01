@@ -1,13 +1,16 @@
 
 * Thursday June 13, 2024
+- [ ] Forest version figure out the proof using Ramdas thing to combine the intervals -- each interval needs the coverage and then it should work. Ensure bootstrapping gives the right coverage
+
+* Thursday June 13, 2024
 
 
 
 ** Experiments
-*** Add exposition for both experiments describing the effectiveness of GPT as a base classifier, eg comparison with standard ML or with naive techniques
-*** Investigate the overcoverage by trying leave-one-out coverage
-*** Recreate Figure 8 for the politics example where we split in time-periods for the time dependent model
-*** Use the proportion of test points that have sets that are smaller as a metric
+- [x] *** Add exposition for both experiments describing the effectiveness of GPT as a base classifier, eg comparison with standard ML or with naive techniques
+- [x] *** Investigate the overcoverage by trying leave-one-out coverage
+- [ ] *** Recreate Figure 8 for the politics example where we split in time-periods for the time dependent model
+- [x] *** Use the proportion of test points that have sets that are smaller as a metric
 - Use this for all models:
 - Real/synthetic data comparison
 - Politics
@@ -16,10 +19,14 @@
 - GPT defines these scores as, etc etc. Need proof that it knows what they are and that the resulting groups of states that it gives are representative of this knowledge
 
 
+- [ ] The figure that jungeum wanted
+- [x] recreation of the alpha plot for the politics data
+- [x] Table with the proportion for the real data oone uhfufufu
+
 
 ** Writing
-*** Algorithm 2 - include one line for stopping criterion and describe what it is
-*** Change notation to use (0,0) for the root node of the tree
+- [x] *** Algorithm 2 - include one line for stopping criterion and describe what it is
+- [x] *** Change notation to use (0,0) for the root node of the tree
 *** Work on the introduction
 - More scientific
 - compress the references
