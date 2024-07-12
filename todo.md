@@ -1,4 +1,26 @@
 
+Friday July 12
+
+** TODO Think about the threshold
+Does including a threshold to split ruin the $\delta$ factor
+** TODO Think about the splitting order
+Does including a splitting order also affect the $\delta$ factor?
+Revise the algorithm and the notation in the text to including the direction/order (superscript i)
+** TODO Do the ChatGPT multiple sampling naive method for UQ
+Might need to ask Veronika via email to get the details right for that
+** TODO Revise figures
+Side-by-side figures, remove large figures, move the lower bound fig that is not close to appendix
+** TODO Once everything has been figured out, re-run the experiments
+** TODO Revise the combining intervals block
+Write about the idea, in detail, involving subsampling rows/cols
+** TODO Revise the Gibbs reference section
+Remove a lot of the detail
+** TODO Revise the tree for full conformal section
+Talk about predicting the level with the center of the range, etc
+
+
+
+
 * Thursday June 13, 2024
 - [ ] Forest version figure out the proof using Ramdas thing to combine the intervals -- each interval needs the coverage and then it should work. Ensure bootstrapping gives the right coverage
 
