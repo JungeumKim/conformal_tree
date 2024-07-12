@@ -17,6 +17,7 @@ Write about the idea, in detail, involving subsampling rows/cols
 Remove a lot of the detail
 ** TODO Revise the tree for full conformal section
 Talk about predicting the level with the center of the range, etc
+** TODO Redefine efficiency, recolor the plot of Figure 5
 
 
 
