@@ -62,7 +62,7 @@ Write about the idea, in detail, involving subsampling rows/cols
 Remove a lot of the detail
 ** TODO Revise the tree for full conformal section
 Talk about predicting the level with the center of the range, etc
-
+** TODO Talk with people why iid. and would exchangeability make the rank uniform.
 
 
 
