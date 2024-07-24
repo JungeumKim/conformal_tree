@@ -1,33 +1,33 @@
 Thursday July 18 Meeting:
 
-** TODO Send updated manuscript to Veronika by Monday
+** DONE Send updated manuscript to Veronika by Monday
 ** TODO Add outline to introduction, right before the notations section
 Outline the sections and highlight contributions
-** TODO Cleanup tree methodology section
+** DONE Cleanup tree methodology section
 - Separate the history from the tree. Use H(T) to denote the history, which gets updated in the algorithm as well. H(T) is a map from nodes to split directions
 - Use \mathbb{T}_K to denote the class of binary trees with size K
 - Define range reduction of a node in a specific direction
 - Define candidacy outside of the algorithm box that needs the existence of one direction j such that splitting is possible (splitting is possible requires min samples leaf and requires the threshold to be surpassed)
 
   Formal definition of eligibility/candidacy, introduce candidate, screening rule with details outside of the algorithm box. Keep the check for K leaves inside the alg box
-** TODO Remark 2: (Jungeum, what does it say?)
+** DONE Remark 2: (Jungeum, what does it say?)
 ** TODO Reorganize the sections
 - Conformal tree is adaptive can go to section 4
 - Section 4: Synthetic data and real data benchmarks
 - Section 5: UQ for LLM: GPT classification examples
 - Add definition of the naive uncertainty quantification, then just refer to it when explaining results
 - Add definition of temperature and other necessary LLM preliminaries
-** TODO Figure 1
+** DONE Figure 1
 Add the percentage of points for which the interval was narrower to our method, and the coverage, and the width to all plots
 ** TODO Make a really nice looking figure that showcases the dyadicness of the tree structure
 ** TODO Ensure consistent notation in the notation section reaches throughout the whole paper, and that all notation in the appendix proofs matches that notation as well.
 Separate notation section in appendix if necessary.
 ** TODO Remove the word split from the C in eq 3.3, eq. 3.4, eq 3.5?
-** TODO Figure 4:
+** DONE Figure 4:
 Add a map for NAIVE UQ
-** TODO Figure 3:
+** DONE Figure 3:
 Add naive UQ to the bar plot, and the empirical test coverage plot
-** TODO Figure 6:
+** DONE Figure 6:
 Add naive UQ to the bar plot
 ** TODO Write some concluding remarks preliminary for V to review and revise
 - Other robust predictors are possible
@@ -35,9 +35,9 @@ Add naive UQ to the bar plot
 ** TODO Appendix: Proof of lemma 1
 Notation: define P_{X,S}, \mathcal{X}, index set I ranges over what, etc.
 Needs to be explicit about everything
-** TODO Figure out IID vs exchangeable
+** DONE Figure out IID vs exchangeable
 What is necessary for the ranks to be uniform, and why do papers say iid?
-** TODO Table 1:
+** DONE Table 1:
 - Replace Locally weighted tree with conformal forest (CART)
 - Add elaboration in body text explaining why we don't expect to beat other methods/ competitiveness is sufficient
 - CART is fine here because the forest does not have a guarantee anyway bc even the Ramdas bound sacrifices to $\alpha/2$
