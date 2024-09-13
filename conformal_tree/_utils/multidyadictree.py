@@ -2,9 +2,9 @@
 import numpy as np
 from sklearn.base import BaseEstimator
 
-class DyadicTree:
+class MultiDyadicTree:
     def __init__(self):
-        self.nodes = {(0,1): 0.0}
+        self.nodes = {(0,1): (None, 0.0)}
 
     def __getitem__(self, key):
         if key not in self.nodes:
@@ -17,13 +17,14 @@ class DyadicTree:
     def __repr__(self):
         return f"{self.nodes}"
 
-    def split(self, parent_key, values):
+    def split(self, parent_key, split_dir, values):
         h, i = parent_key
         left_child_key = (h+1, 2*i - 1)
         left_child_val, right_child_val = values
         right_child_key = (h+1, 2*i)
-        self.nodes[left_child_key] = left_child_val
-        self.nodes[right_child_key] = right_child_val
+        self.nodes[parent_key] = (split_dir, self.nodes[parent_key][1])
+        self.nodes[left_child_key] = (None, left_child_val)
+        self.nodes[right_child_key] = (None, right_child_val)
 
     def is_leaf(self, node):
         h, i = node
@@ -35,7 +36,7 @@ class DyadicTree:
     def get_max_depth(self):
         return np.max([node[0] for node in self.nodes])
 
-class DyadicTreeRegressor(BaseEstimator):
+class MultiDyadicTreeRegressor(BaseEstimator):
     def __init__(self,
                  domain,
                  criterion,
@@ -43,7 +44,7 @@ class DyadicTreeRegressor(BaseEstimator):
                  min_samples_split=1,
                  min_samples_leaf=1,
                  max_leaf_nodes=100,
-                 threshold = 0.0):
+                 threshold = 0.1):
         self.domain = domain
         self.criterion = criterion
         self.max_depth = max_depth
@@ -51,6 +52,8 @@ class DyadicTreeRegressor(BaseEstimator):
         self.min_samples_leaf = min_samples_leaf
         self.max_leaf_nodes = max_leaf_nodes
         self.threshold = threshold
+
+        self.d = domain.shape[0]
 
     def get_depth(self):
         if self._tree is None:
@@ -78,69 +81,82 @@ class DyadicTreeRegressor(BaseEstimator):
 
     def _build_tree(self, X, y):
         current_n_leaves = 1
-        _tree = DyadicTree()
+        self._tree = MultiDyadicTree()
 
         current_leaves = [(0,1)]
 
         while current_n_leaves < self.max_leaf_nodes:
             candidate_leaves_criteria = {}
             for leaf in current_leaves:
-                depth_check = leaf[0] < self.max_depth
-                min_samples_split_check = len(self._indices_in_region(X, self._get_region_from_node(leaf))) >= self.min_samples_split
-                min_samples_left_child_check = len(self._indices_in_region(X, self._get_region_from_node(left_child(leaf)))) >= self.min_samples_leaf
-                min_samples_right_child_check = len(self._indices_in_region(X, self._get_region_from_node(right_child(leaf)))) >= self.min_samples_leaf
-                if depth_check and min_samples_split_check and min_samples_left_child_check and min_samples_right_child_check:
-                    _current_criterion_val, mult = self._criterion_wrapper(X, y, leaf)
-                    if mult > self.threshold:
-                        candidate_leaves_criteria[leaf] = _current_criterion_val
+                for direc in range(self.d):
+                    depth_check = leaf[0] < self.max_depth
+                    min_samples_split_check = len(self._indices_in_region(X, self._get_region_from_node(leaf))) >= self.min_samples_split
+                    min_samples_left_child_check = len(self._indices_in_region(X, self._get_region_from_node(left_child(leaf), direc))) >= self.min_samples_leaf
+                    min_samples_right_child_check = len(self._indices_in_region(X, self._get_region_from_node(right_child(leaf), direc))) >= self.min_samples_leaf
+                    if depth_check and min_samples_split_check and min_samples_left_child_check and min_samples_right_child_check:
+                        _current_criterion_val, mult = self._criterion_wrapper(X, y, leaf, new_dir = direc)
+                        if mult > self.threshold:
+                            candidate_leaves_criteria[(leaf, direc)] = _current_criterion_val
 
             # candidate_leaves_criteria = {leaf: self.criterion(X, y, leaf) for leaf in current_leaves if leaf[0] < self.max_depth}
             if len(candidate_leaves_criteria) == 0:
                 break
 
             best_leaf = max(candidate_leaves_criteria, key=candidate_leaves_criteria.get)
-            h, i = best_leaf
-            region_left = self._get_region_from_node((h+1,2*i-1))
-            region_right = self._get_region_from_node((h+1,2*i))
+            (h, i), direction = best_leaf
+
+
+            region_left = self._get_region_from_node((h+1,2*i-1), new_dir=direction)
+            region_right = self._get_region_from_node((h+1,2*i), new_dir=direction)
             leaf_vals = (np.mean(y[self._indices_in_region(X, region_left)]), np.mean(y[self._indices_in_region(X, region_right)]))
-            _tree.split(best_leaf, leaf_vals)
-            current_leaves = [node for node in current_leaves if node != best_leaf]
+            self._tree.split((h,i), direction, leaf_vals)
+            current_leaves = [node for node in current_leaves if node != (h,i)]
 
             current_leaves.append((h+1,2*i-1))
             current_leaves.append((h+1,2*i))
             current_n_leaves += 1
 
-        self._tree = _tree
-
-    def _get_region_from_node(self, node):
+    def _get_region_from_node(self, node, new_dir=None):
         h, i = node
-        dim = self.domain.shape[0]
+        path = []
 
-        lc = np.zeros(h) #1 if leftchild, 0 if rightchild
-        while(h > 0):
-            h -= 1
-            lc[h] = i % 2
-            i = int(np.ceil(i/2))
+        if h==0 and i==1:
+            return self.domain
+        h_it = h
+        i_it = i
+
+
+        h_it = h
+        i_it = i
+        while h_it > 0:
+            parent_node = (h_it - 1, int(np.ceil(i_it / 2)))
+            s, v = self._tree.nodes.get(parent_node, (None, None))
+            if s is None and new_dir is None:
+                raise ValueError(f"The split direction is not defined for the parent node. Node: {parent_node}. Tree: {self.nodes}")
+            if s is None:
+                s = new_dir  # Use new_dir if the split direction is None
+            path.append((s, i_it % 2))
+            h_it -= 1
+            i_it = int(np.ceil(i_it / 2))
 
         region = np.copy(self.domain)
 
-
-        for ind in range(lc.shape[0]):
-            cdim = ind % dim
-            cdimsize = region[cdim,1]-region[cdim,0]
-
-            if(lc[ind]):
-                region[cdim,1] = region[cdim,1] - (cdimsize/2)
-            else:
-                region[cdim,0] = region[cdim,0] + (cdimsize/2)
+        for (s, direction) in reversed(path):
+            if s is not None:
+                cdimsize = region[s, 1] - region[s, 0]
+                if direction == 1:  # Left child
+                    region[s, 1] -= cdimsize / 2
+                else:  # Right child
+                    region[s, 0] += cdimsize / 2
 
         return region
 
-    def _criterion_wrapper(self, X, y, node):
+
+    def _criterion_wrapper(self, X, y, node, new_dir):
         h, i = node
         region_parent = self._get_region_from_node((h,i))
-        region_left_child = self._get_region_from_node((h+1,2*i-1))
-        region_right_child = self._get_region_from_node((h+1,2*i))
+        region_left_child = self._get_region_from_node((h+1,2*i-1), new_dir=new_dir)
+        region_right_child = self._get_region_from_node((h+1,2*i), new_dir=new_dir)
 
         parent_inds = self._indices_in_region(X, region_parent)
         l_child_inds = self._indices_in_region(X, region_left_child)
@@ -180,8 +196,11 @@ class DyadicTreeRegressor(BaseEstimator):
             if not in_bounds.any():
                 raise ValueError(f"No region found for point {point}")
 
-
-            leaf_index = np.where(in_bounds.all(axis=1))[0][0]
+            try:
+                leaf_index = np.where(in_bounds.all(axis=1))[0][0]
+            except IndexError as e:
+                leaf_index = 0
+                print("IndexError caught")
 
             result[i] = leaf_index
 
@@ -260,6 +279,5 @@ def criterion_range_reduction_uw(X, y, parent_inds, l_child_inds, r_child_inds):
     range_reduction_mult = ( (np.max(y[parent_inds] - np.min(y[parent_inds]))) /
                    (((0.5) * (np.max(y[l_child_inds])-np.min(y[l_child_inds]))) +
              ((0.5)* (np.max(y[r_child_inds])-np.min(y[r_child_inds])))))
-
 
     return range_reduction, range_reduction_mult-1

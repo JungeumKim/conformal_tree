@@ -1,0 +1,2930 @@
+[
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.1,
+        "seboreic dermatitis": 0.05,
+        "lichen planus": 0.6,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.14999999999999997,
+        "lichen planus": 0.19999999999999996,
+        "pityriasis rosea": 0.09999999999999998,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.2,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.4,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.2
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.5,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.25000000000000006,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.85,
+        "seboreic dermatitis": 0.05,
+        "lichen planus": 0.02,
+        "pityriasis rosea": 0.02,
+        "cronic dermatitis": 0.03,
+        "pityriasis rubra pilaris": 0.03
+    },
+    {
+        "psoriasis": 0.1,
+        "seboreic dermatitis": 0.05,
+        "lichen planus": 0.6,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.10000000000000002,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.30000000000000004,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.2
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.35,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.1,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.5,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.1,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.3
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.09999999999999998,
+        "seboreic dermatitis": 0.09999999999999998,
+        "lichen planus": 0.3999999999999999,
+        "pityriasis rosea": 0.09999999999999998,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.3,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.85,
+        "seboreic dermatitis": 0.05,
+        "lichen planus": 0.02,
+        "pityriasis rosea": 0.02,
+        "cronic dermatitis": 0.03,
+        "pityriasis rubra pilaris": 0.03
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.30000000000000004,
+        "seboreic dermatitis": 0.30000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.4,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.20000000000000004,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.20000000000000004,
+        "seboreic dermatitis": 0.30000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.05,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.6,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.30000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.15000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.5,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.35,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.09999999999999998,
+        "seboreic dermatitis": 0.09999999999999998,
+        "lichen planus": 0.3999999999999999,
+        "pityriasis rosea": 0.09999999999999998,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.14999999999999997,
+        "lichen planus": 0.19999999999999996,
+        "pityriasis rosea": 0.09999999999999998,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.10000000000000002,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.30000000000000004,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.1,
+        "seboreic dermatitis": 0.05,
+        "lichen planus": 0.6,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.2,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.20000000000000004,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.3,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.20000000000000004,
+        "seboreic dermatitis": 0.30000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.25
+    },
+    {
+        "psoriasis": 0.14999999999999997,
+        "seboreic dermatitis": 0.24999999999999994,
+        "lichen planus": 0.19999999999999996,
+        "pityriasis rosea": 0.09999999999999998,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.2,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.05,
+        "seboreic dermatitis": 0.05,
+        "lichen planus": 0.75,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.15000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.3,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.25000000000000006,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.85,
+        "seboreic dermatitis": 0.05,
+        "lichen planus": 0.02,
+        "pityriasis rosea": 0.02,
+        "cronic dermatitis": 0.03,
+        "pityriasis rubra pilaris": 0.03
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.35,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.20000000000000004,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.4,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.25000000000000006,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.1,
+        "seboreic dermatitis": 0.05,
+        "lichen planus": 0.6,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.35,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.15
+    },
+    {
+        "psoriasis": 0.3,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.29999999999999993,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.09999999999999998,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.15,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.2
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.6,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.02,
+        "cronic dermatitis": 0.02,
+        "pityriasis rubra pilaris": 0.01
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.3999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.09999999999999998,
+        "cronic dermatitis": 0.14999999999999997,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.15
+    },
+    {
+        "psoriasis": 0.2,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.1,
+        "seboreic dermatitis": 0.05,
+        "lichen planus": 0.6,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.02,
+        "pityriasis rosea": 0.03,
+        "cronic dermatitis": 0.03,
+        "pityriasis rubra pilaris": 0.02
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.10000000000000002,
+        "lichen planus": 0.30000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.15000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.05,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.6,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.15000000000000002,
+        "lichen planus": 0.30000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.10000000000000002,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.30000000000000004,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.25000000000000006,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.4,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.15000000000000002,
+        "lichen planus": 0.30000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.15000000000000002,
+        "lichen planus": 0.30000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.15000000000000002,
+        "lichen planus": 0.30000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.4,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.15000000000000002,
+        "lichen planus": 0.30000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.3,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.10000000000000002,
+        "seboreic dermatitis": 0.10000000000000002,
+        "lichen planus": 0.5000000000000001,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.4,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.35,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.1,
+        "seboreic dermatitis": 0.05,
+        "lichen planus": 0.6,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.75,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.03,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.02
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.15,
+        "lichen planus": 0.25,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.25000000000000006,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.20000000000000004,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.20000000000000004,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.02,
+        "pityriasis rosea": 0.03,
+        "cronic dermatitis": 0.03,
+        "pityriasis rubra pilaris": 0.02
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.10000000000000002,
+        "seboreic dermatitis": 0.10000000000000002,
+        "lichen planus": 0.5000000000000001,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.35000000000000003,
+        "seboreic dermatitis": 0.15000000000000002,
+        "lichen planus": 0.20000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.14999999999999997,
+        "lichen planus": 0.19999999999999996,
+        "pityriasis rosea": 0.09999999999999998,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.4,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.10000000000000002,
+        "lichen planus": 0.30000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.15000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.25,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.35,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.3999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.09999999999999998,
+        "cronic dermatitis": 0.14999999999999997,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.02,
+        "pityriasis rosea": 0.03,
+        "cronic dermatitis": 0.03,
+        "pityriasis rubra pilaris": 0.02
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.02,
+        "pityriasis rosea": 0.03,
+        "cronic dermatitis": 0.03,
+        "pityriasis rubra pilaris": 0.02
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.4,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.2,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.1,
+        "seboreic dermatitis": 0.05,
+        "lichen planus": 0.6,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.5,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.2,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.20000000000000004,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.10000000000000002,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.30000000000000004,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.20000000000000004,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.30000000000000004,
+        "seboreic dermatitis": 0.30000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.02,
+        "pityriasis rosea": 0.03,
+        "cronic dermatitis": 0.03,
+        "pityriasis rubra pilaris": 0.02
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.30000000000000004,
+        "seboreic dermatitis": 0.30000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.4,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.30000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.15000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.4,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.4,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.14999999999999997,
+        "lichen planus": 0.19999999999999996,
+        "pityriasis rosea": 0.09999999999999998,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.3,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.25000000000000006,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.29999999999999993,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.09999999999999998,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.25000000000000006,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.15000000000000002,
+        "lichen planus": 0.30000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.14999999999999997,
+        "lichen planus": 0.19999999999999996,
+        "pityriasis rosea": 0.09999999999999998,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.2,
+        "lichen planus": 0.2,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.6499999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.029999999999999992,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.019999999999999997
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.10000000000000002,
+        "lichen planus": 0.30000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.15000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.4,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.3,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.15
+    },
+    {
+        "psoriasis": 0.25000000000000006,
+        "seboreic dermatitis": 0.15000000000000002,
+        "lichen planus": 0.30000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.7,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.05,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.6,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.10000000000000002,
+        "lichen planus": 0.35000000000000003,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.1,
+        "seboreic dermatitis": 0.05,
+        "lichen planus": 0.5,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.2,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.45,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.1,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.5,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.15000000000000002,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.25000000000000006,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.2,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.1,
+        "seboreic dermatitis": 0.05,
+        "lichen planus": 0.6,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.2,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.30000000000000004,
+        "seboreic dermatitis": 0.20000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.20000000000000004,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.6499999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.029999999999999992,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.019999999999999997
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.2,
+        "cronic dermatitis": 0.25,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.24999999999999994,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.09999999999999998,
+        "pityriasis rosea": 0.14999999999999997,
+        "cronic dermatitis": 0.19999999999999996,
+        "pityriasis rubra pilaris": 0.09999999999999998
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.6,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.05,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.3,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.5999999999999999,
+        "seboreic dermatitis": 0.19999999999999996,
+        "lichen planus": 0.04999999999999999,
+        "pityriasis rosea": 0.04999999999999999,
+        "cronic dermatitis": 0.04999999999999999,
+        "pityriasis rubra pilaris": 0.04999999999999999
+    },
+    {
+        "psoriasis": 0.3,
+        "seboreic dermatitis": 0.4,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.1,
+        "pityriasis rubra pilaris": 0.05
+    },
+    {
+        "psoriasis": 0.30000000000000004,
+        "seboreic dermatitis": 0.30000000000000004,
+        "lichen planus": 0.10000000000000002,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.25,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.1,
+        "pityriasis rosea": 0.15,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35,
+        "seboreic dermatitis": 0.25,
+        "lichen planus": 0.05,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.35000000000000003,
+        "seboreic dermatitis": 0.15000000000000002,
+        "lichen planus": 0.20000000000000004,
+        "pityriasis rosea": 0.10000000000000002,
+        "cronic dermatitis": 0.10000000000000002,
+        "pityriasis rubra pilaris": 0.10000000000000002
+    },
+    {
+        "psoriasis": 0.15,
+        "seboreic dermatitis": 0.1,
+        "lichen planus": 0.4,
+        "pityriasis rosea": 0.1,
+        "cronic dermatitis": 0.15,
+        "pityriasis rubra pilaris": 0.1
+    },
+    {
+        "psoriasis": 0.75,
+        "seboreic dermatitis": 0.15,
+        "lichen planus": 0.02,
+        "pityriasis rosea": 0.02,
+        "cronic dermatitis": 0.03,
+        "pityriasis rubra pilaris": 0.03
+    }
+]
