@@ -11,7 +11,5 @@ setup(
         'scikit-learn'
     ],
     author=r"Jungeum Kim and Sean O'Hagan",
-    author_email='to be filled in',
-    description='to be filled in',
-    url='to be filled in (github repo)',  # Optional, if you host it on GitHub
+    url='https://github.com/JungeumKim/conformal_tree',
 )
