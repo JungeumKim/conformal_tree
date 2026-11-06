@@ -2,10 +2,10 @@ import numpy as np
 from typing import Any
 from collections import deque
 from typing import List, Dict
-from IPython.core.debugger import set_trace
 
 from ._utils import tree_utils
 from ._utils import validation_utils
+from ._utils.fast_dyadic import conformal_threshold
 
 class ConformalTree:
     """Parent class for conformal tree
@@ -32,7 +32,7 @@ class ConformalTree:
         self.max_depth = max_depth
         self.threshold = threshold
 
-        #set_trace()
+
     def calibrate(self, X_calib: np.ndarray, scores: np.ndarray,  alpha: float):
         """Calibrate to calibration data
 
@@ -51,18 +51,11 @@ class ConformalTree:
                                                                               threshold=self.threshold)
 
         bin_idx = np.unique(membership)
-        
-        
+
         for idx in bin_idx:
             scores_subset = scores[membership == idx]
-            m = np.sum(membership == idx)
-            #qtile = np.min((1,np.ceil((1-alpha)*(m-2) +1)/m))
-            qtile = np.min((1,np.ceil((1-alpha)*(m+1))/m))
+            self.offsets[idx] = conformal_threshold(scores_subset, alpha)
 
-            C = np.quantile(scores_subset, qtile)
-            self.offsets[idx] = C
-        
-    
     def test_set(self):
         raise NotImplementedError("Implemented in child classes.")
 
@@ -94,8 +87,8 @@ class ConformalTreeRegression(ConformalTree):
 
         y_lb -= test_offsets
         y_ub += test_offsets
-        
-        if return_group_idx: 
+
+        if return_group_idx:
             return y_lb, y_ub, test_leaf_idxs
         else:
             return y_lb, y_ub
@@ -123,7 +116,7 @@ class ConformalTreeClassification(ConformalTree):
         validation_utils.validate_test_set_classification(X_test, y_test_pred)
 
         test_sets = []
-        group_indices=[]
+        group_indices = []
         for i in range(X_test.shape[0]):
             X_test_pt = X_test[i]
 
@@ -131,15 +124,15 @@ class ConformalTreeClassification(ConformalTree):
 
             test_leaf_idx = self.tree_model.apply(X_test_pt.reshape(1,-1))
             group_indices.append(test_leaf_idx)
-            
+
             lookup = np.vectorize(self.offsets.get)
             test_offset = lookup(test_leaf_idx)
 
             class_nonconformity_scores = {class_: 1 - prob for class_, prob in y_test_probs.items()}
             filtered_scores = {class_: score for class_, score in class_nonconformity_scores.items() if score <= test_offset + 2*np.finfo(np.float32).eps} #for floating point issues
             test_sets.append(list(filtered_scores.keys()))
-            
-        if return_group_idx: 
+
+        if return_group_idx:
             return test_sets, group_indices
         else:
             return test_sets

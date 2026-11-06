@@ -2,3 +2,5 @@
 **/.ipynb_checkpoints/*
 *.egg-info
 *.DS_Store
+.venv/
+benchmarks/output/

@@ -1,52 +1,75 @@
 # Conformal Tree
 
-This repository contains an implementation of the Conformal Tree algorithm, as described in the article "Adaptive Uncertainty Quantification for Generative AI" which can be found [here](https://arxiv.org/abs/2408.08990).
+Code for [Adaptive Uncertainty Quantification for Generative AI](https://arxiv.org/abs/2408.08990).
 
-## Description
+## Install
 
-Conformal prediction is a framework for obtaining well-calibrated confidence sets for arbitrary models, provided that joint distribution of all data is exchangeable.
+Use Python 3.12. From the repository root:
 
-Conformal tree is a locally adaptive method for conformal prediction that does not require access to the training dataset, making it ideal for modern deep learning applications in which the training data is obscured from the user.
+```sh
+python -m pip install -e ".[benchmarks]"
+```
 
 ## Usage
 
-The basic usage pattern for conformalizing a regression model is
+Use a model trained independently of the calibration and test data.
 
 ```python
-from conformal_tree import ConformalTreeRegression
+import numpy as np
+from conformal_tree import ConformalForest
 
-y_calib_pred = my_model.predict(X_calib)
-y_test_pred = my_model.predict(X_test)
+scores = np.abs(y_cal - model.predict(X_cal))
+domain = np.column_stack((X_train.min(axis=0), X_train.max(axis=0)))
 
-ct = ConformalTreeRegression(domain=np.array([[0.0,1.0]]))
-conf_scores = np.abs(y_calib - y_calib_pred)
-ct.calibrate(X_calib, conf_scores, alpha=0.1)
-
-test_sets = ct.test_set(X_calib, y_test_pred)
+forest = ConformalForest(
+    min_samples_leaf=20, max_leaves=4, max_directions="sqrt",
+    n_trees=100, max_depth=8, threshold=0.05, seed=123,
+)
+forest.fit(X_cal, scores, domain)
+lower, upper = forest.predict_intervals(
+    X_test, model.predict(X_test), alpha=0.1,
+    aggregation="uniform", rng=np.random.default_rng(456),
+)
 ```
 
-A more detailed example is in the accompanying demonstration notebook `regression_demo.ipynb`. 
+This uses the hallucination procedure: each test X is included in counts, but
+its score is not used. `"sqrt"` samples `ceil(sqrt(d))` directions per node.
+Other choices are `"log2"`, `"all"`, or an integer. For a single multidyadic
+tree, set `max_directions="all", n_trees=1`.
 
-For classification, our implementation considers the conformity score function $S(x,y) = 1-f(x)_y$, and the predictions on test data should be given as a list or array of dictionaries, with keys as class names and values as floats that sum to one. See the accompanying example notebook `classification_demo.ipynb` for an example. 
+Use `aggregation="majority"` for majority voting. `forest.delta_` gives the
+stability bound. No stability correction is applied to the quantiles automatically.
+The older `ConformalTreeRegression` and `ConformalTreeClassification` classes remain available.
 
-We also recommend reviewing `conformal_tree/conformal_tree.py`.
+## Tree and forest comparison
 
-## Attribution
+From the repository root:
 
-This code was jointly developed by Jungeum Kim and Sean O'Hagan, as part of a project that is a joint work with Veronika Rockova. If you wish to cite this work, please use the following citation
+```sh
+git clone https://github.com/msesia/cqr-comparison.git ../cqr-comparison
+python -m benchmarks.compare_tree_forest --data-dir ../cqr-comparison/datasets --jobs 4
+```
+
+The default run compares a single tree with all directions against a forest
+of 100 trees with `ceil(sqrt(d))` directions, on eight datasets over 20 paired
+trials. It uses saved model scores and splits, then refits the trees and
+recomputes the intervals. Settings are `alpha=0.1`, `m=20`, depth 8, and
+improvement threshold 0.05. Both methods use the same leaf cap, chosen as the
+largest cap up to the original benchmark cap for which the forest has `delta<=0.1`.
+Responses are divided by the mean absolute training response.
+
+Results are saved to `benchmarks/output/tree_forest/tables.txt`.
+The script resumes completed trials and checks the results against the saved reference.
+For alternatives, use `--directions log2`, `--aggregation majority`, or
+`--refit-model` to repeat model fitting. Choose a new `--output` directory when changing settings.
+
+## Citation
 
 ```bibtex
 @misc{kim2024adaptiveuncertaintyquantificationgenerative,
-      title={Adaptive Uncertainty Quantification for Generative AI}, 
-      author={Jungeum Kim and Sean O'Hagan and Veronika Rockova},
-      year={2024},
-      eprint={2408.08990},
-      archivePrefix={arXiv},
-      primaryClass={stat.ME},
-      url={https://arxiv.org/abs/2408.08990}, 
+  title={Adaptive Uncertainty Quantification for Generative AI},
+  author={Jungeum Kim and Sean O'Hagan and Veronika Rockova},
+  year={2024}, eprint={2408.08990}, archivePrefix={arXiv},
+  primaryClass={stat.ME}
 }
 ```
-
-## Contributing
-
-The version currently uploaded is an early release, which may contain issues. Feel free to file an issue, submit a pull request, or contact the authors if you wish to contribute.
