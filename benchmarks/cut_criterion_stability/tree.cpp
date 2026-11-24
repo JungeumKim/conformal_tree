@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <cmath>
 #include <limits>
+#include <iterator>
 #include <set>
 #include <utility>
 #include <vector>
@@ -79,12 +80,29 @@ Tree fit(const double* x,const double* s,int N,int query,int hidden,int K,bool a
     return tree;
 }
 }
+#ifdef ORDINARY_TREE
+// Fit using calibration observations only. Route the held-out x after all cuts are fixed.
+Tree ordinary_fit(const double* x,const double* s,int N,int q,int K,bool all,bool squared,double rate) {
+    std::vector<double> calibration_x(x,x+N), calibration_scores(s,s+N);
+    calibration_x.erase(calibration_x.begin()+q);
+    calibration_scores.erase(calibration_scores.begin()+q);
+    auto tree=fit(calibration_x.data(),calibration_scores.data(),N-1,0,-1,K,all,squared,rate);
+    auto right=tree.cuts.lower_bound(x[q]);
+    tree.leaf={right==tree.cuts.begin()?0.:*std::prev(right),
+               right==tree.cuts.end()?10.:*right};
+    return tree;
+}
+#endif
 // Output per method: query mismatch, partition mismatch, leaf count (hidden),
 // lower/upper query boundary (full, hidden), leaf count (full).
 extern "C" void compare(const double* x,const double* s,int N,int q,int K,double rate,double* out) {
     for (int method=0;method<4;++method) {
         auto f=fit(x,s,N,q,-1,K,method>=2,method%2,rate);
+#ifdef ORDINARY_TREE
+        auto h=ordinary_fit(x,s,N,q,K,method>=2,method%2,rate);
+#else
         auto h=fit(x,s,N,q,q,K,method>=2,method%2,rate);
+#endif
         double* a=out+8*method;
         a[0]=f.leaf!=h.leaf; a[1]=f.cuts!=h.cuts; a[2]=1+h.cuts.size();
         a[3]=f.leaf.first; a[4]=f.leaf.second; a[5]=h.leaf.first; a[6]=h.leaf.second;

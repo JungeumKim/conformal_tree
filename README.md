@@ -87,3 +87,30 @@ python benchmarks/selected_leaf_coverage/run_leaves.py
 ```
 
 Both scripts generate their own data. New runs write to `benchmarks/output/`; the saved results are beside each report.
+
+### Ordinary tree and real-data leaf coverage
+
+The [ordinary-tree tables](benchmarks/ordinary_tree/REPORT.md) use only the calibration observations to fit the tree. To rerun the Data 2 split comparison and the two synthetic selected-leaf tables:
+
+```sh
+python benchmarks/ordinary_tree/run_split_comparison.py
+python benchmarks/selected_leaf_coverage/run_leaves.py --ordinary
+python benchmarks/ordinary_tree/tables.py --rerun
+```
+
+The [real-data tables](benchmarks/real_selected_leaf_coverage/REPORT.md) compare the hallucination and ordinary trees on six regression benchmarks and two classification applications. To regenerate the tables and leaf definitions from the saved counts:
+
+```sh
+python benchmarks/real_selected_leaf_coverage/tables.py
+```
+
+To repeat the underlying simulations, use the same cqr-comparison datasets as above. The classification scores are available in this checkout. For legislator, the two covariates are stored as dyadic bin indices at depth six, the deepest possible split with the seven-leaf cap.
+
+```sh
+python benchmarks/real_selected_leaf_coverage/inputs.py --data-dir ../cqr-comparison/datasets
+python benchmarks/real_selected_leaf_coverage/run.py
+python benchmarks/real_selected_leaf_coverage/skin_independent.py
+python benchmarks/real_selected_leaf_coverage/tables.py --rerun
+```
+
+The regenerated real-data report, counts and LaTeX tables are under `benchmarks/output/real_selected_leaf_coverage/`.

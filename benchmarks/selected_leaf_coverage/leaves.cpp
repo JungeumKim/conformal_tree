@@ -13,7 +13,11 @@ extern "C" void classify_batch(int batch,int N,int K,const double* xs,const doub
         const double* x=xs+i*N;
         const double* s=raw+i*N;
         int q=query[i];
+#ifdef ORDINARY_TREE
+        auto h=ordinary_fit(x,fitting+i*N,N,q,K,false,false,.05);
+#else
         auto h=fit(x,fitting+i*N,N,q,q,K,false,false,.05);
+#endif
         auto f=fit(x,fitting+i*N,N,q,-1,K,false,false,.05);
         int below=0,calibration_count=0;
         for(int j=0;j<N;++j) {

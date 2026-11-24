@@ -53,7 +53,7 @@ def interval(a):
 
 
 def simulate(task):
-    base,lib,ds,phase,block,reps,repo=task
+    base,lib,ds,phase,block,reps,repo,ordinary=task
     draw,scale,predict,fn=setup(base,lib,ds)
     rng=np.random.default_rng([SEED,ds,phase,block])
     cap={1:4,2:8}[ds]
@@ -77,7 +77,7 @@ def simulate(task):
                     vis=np.arange(N)!=q[j] if hidden else np.ones(N,bool)
                     cache=ref.DyadicSummaryCache(sx[j,vis,None],sf[j,vis],np.array([[0.,10.]]),20,cap)
                     test=sx[j,q[j]:q[j]+1]
-                    fitted=cache.fit(test if hidden else None)
+                    fitted=cache.fit(test if hidden and not ordinary else None)
                     path=fitted.route_one(test)
                     ids.append(cell(cache.bounds(path)[0]))
                     if hidden:
@@ -148,13 +148,13 @@ def main(args):
     args.out.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory() as tmp:
         lib=str(Path(tmp)/"leaves.so")
-        subprocess.run(["c++","-O3","-std=c++17","-shared","-fPIC","-I",str(args.base),
+        subprocess.run(["c++",*(["-DORDINARY_TREE"] if args.ordinary else []),"-O3","-std=c++17","-shared","-fPIC","-I",str(args.base),
                         str(HERE/"leaves.cpp"),"-o",lib],check=True)
         for ds in (1,2):
-            simulate((args.base,lib,ds,0,0,128,args.repo))
+            simulate((args.base,lib,ds,0,0,128,args.repo,args.ordinary))
         print("256 package comparisons passed (both leaves, calibration count and coverage).",flush=True)
         def tasks(ds,phase,total):
-            return [(args.base,lib,ds,phase,i,min(10000,total-i*10000),args.repo)
+            return [(args.base,lib,ds,phase,i,min(10000,total-i*10000),args.repo,args.ordinary)
                     for i in range((total+9999)//10000)]
         with ProcessPoolExecutor(max_workers=args.jobs) as pool:
             selection={}
@@ -173,7 +173,7 @@ def main(args):
                 a=np.concatenate(pieces)
                 results[ds]=summarize(a,selection[ds])
                 np.savez_compressed(args.out/f"data{ds}.npz",trials=a,
-                                    columns=["hidden_leaf_id","full_leaf_id","covered","calibration_count"])
+                                    columns=["ordinary_leaf_id" if args.ordinary else "hidden_leaf_id","full_leaf_id","covered","calibration_count"])
             (args.out/"results.json").write_text(json.dumps(results,indent=2)+"\n")
 
 
@@ -184,5 +184,9 @@ if __name__=="__main__":
     p.add_argument("--jobs",type=int,default=4)
     p.add_argument("--pilot",type=int,default=12000)
     p.add_argument("--reps",type=int,default=400000)
-    p.add_argument("--out",type=Path,default=HERE.parent/"output"/HERE.name)
-    main(p.parse_args())
+    p.add_argument("--ordinary",action="store_true",help="exclude the query from the tree fit")
+    p.add_argument("--out",type=Path)
+    args=p.parse_args()
+    if args.out is None:
+        args.out=HERE.parent/"output"/("ordinary_selected_leaf" if args.ordinary else HERE.name)
+    main(args)

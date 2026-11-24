@@ -1,0 +1,1928 @@
+{
+  "bike": {
+    "n": 5443,
+    "m": 20,
+    "K": 64,
+    "pool": 7621,
+    "cells": [
+      {
+        "label": "A",
+        "geometry": [
+          {
+            "feature": "holiday",
+            "column": 1,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "workingday",
+            "column": 2,
+            "lower": 0.5,
+            "upper": null
+          },
+          {
+            "feature": "windspeed",
+            "column": 6,
+            "lower": null,
+            "upper": 25.99934959411621
+          },
+          {
+            "feature": "season_1",
+            "column": 7,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "season_2",
+            "column": 8,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "day",
+            "column": 16,
+            "lower": null,
+            "upper": 3.0
+          },
+          {
+            "feature": "year",
+            "column": 18,
+            "lower": 0.5,
+            "upper": null
+          }
+        ],
+        "hallucination": {
+          "selections": 31084,
+          "practical_only": 11,
+          "full_only": 94,
+          "covered": 28030,
+          "rho": 0.07771,
+          "penalty": 0.0033779436365976067,
+          "lower_bound": 0.8966220563634024,
+          "coverage": 0.9017500965126753,
+          "coverage_interval": [
+            0.89839639550398,
+            0.9051037975213707
+          ],
+          "penalty_se": 0.0003277745499017244,
+          "selecting_samples": 5825
+        },
+        "ordinary": {
+          "selections": 31084,
+          "practical_only": 11,
+          "full_only": 94,
+          "covered": 28030,
+          "rho": 0.07771,
+          "penalty": 0.0033779436365976067,
+          "lower_bound": 0.8966220563634024,
+          "coverage": 0.9017500965126753,
+          "coverage_interval": [
+            0.89839639550398,
+            0.9051037975213707
+          ],
+          "penalty_se": 0.0003277745499017244,
+          "selecting_samples": 5825
+        }
+      },
+      {
+        "label": "B",
+        "geometry": [
+          {
+            "feature": "holiday",
+            "column": 1,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "workingday",
+            "column": 2,
+            "lower": 0.5,
+            "upper": null
+          },
+          {
+            "feature": "windspeed",
+            "column": 6,
+            "lower": null,
+            "upper": 25.99934959411621
+          },
+          {
+            "feature": "season_1",
+            "column": 7,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "season_2",
+            "column": 8,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "weather_3",
+            "column": 13,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "day",
+            "column": 16,
+            "lower": null,
+            "upper": 3.0
+          },
+          {
+            "feature": "year",
+            "column": 18,
+            "lower": 0.5,
+            "upper": null
+          }
+        ],
+        "hallucination": {
+          "selections": 11521,
+          "practical_only": 0,
+          "full_only": 17,
+          "covered": 10423,
+          "rho": 0.0288025,
+          "penalty": 0.0014755663570870585,
+          "lower_bound": 0.898524433642913,
+          "coverage": 0.904695772936377,
+          "coverage_interval": [
+            0.8994528175425556,
+            0.9099387283301985
+          ],
+          "penalty_se": 0.00035685583729838844,
+          "selecting_samples": 2297
+        },
+        "ordinary": {
+          "selections": 11521,
+          "practical_only": 0,
+          "full_only": 17,
+          "covered": 10423,
+          "rho": 0.0288025,
+          "penalty": 0.0014755663570870585,
+          "lower_bound": 0.898524433642913,
+          "coverage": 0.904695772936377,
+          "coverage_interval": [
+            0.8994528175425556,
+            0.9099387283301985
+          ],
+          "penalty_se": 0.00035685583729838844,
+          "selecting_samples": 2297
+        }
+      },
+      {
+        "label": "C",
+        "geometry": [
+          {
+            "feature": "holiday",
+            "column": 1,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "workingday",
+            "column": 2,
+            "lower": 0.5,
+            "upper": null
+          },
+          {
+            "feature": "humidity",
+            "column": 5,
+            "lower": 50.0,
+            "upper": null
+          },
+          {
+            "feature": "windspeed",
+            "column": 6,
+            "lower": null,
+            "upper": 25.99934959411621
+          },
+          {
+            "feature": "season_1",
+            "column": 7,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "season_2",
+            "column": 8,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "weather_3",
+            "column": 13,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "year",
+            "column": 18,
+            "lower": null,
+            "upper": 0.5
+          }
+        ],
+        "hallucination": {
+          "selections": 6694,
+          "practical_only": 0,
+          "full_only": 27,
+          "covered": 6080,
+          "rho": 0.016735,
+          "penalty": 0.00403346280250971,
+          "lower_bound": 0.8959665371974903,
+          "coverage": 0.9082760681207052,
+          "coverage_interval": [
+            0.9014038205293472,
+            0.9151483157120631
+          ],
+          "penalty_se": 0.000771327888463222,
+          "selecting_samples": 1482
+        },
+        "ordinary": {
+          "selections": 6694,
+          "practical_only": 0,
+          "full_only": 27,
+          "covered": 6080,
+          "rho": 0.016735,
+          "penalty": 0.00403346280250971,
+          "lower_bound": 0.8959665371974903,
+          "coverage": 0.9082760681207052,
+          "coverage_interval": [
+            0.9014038205293472,
+            0.9151483157120631
+          ],
+          "penalty_se": 0.000771327888463222,
+          "selecting_samples": 1482
+        }
+      },
+      {
+        "label": "D",
+        "geometry": [
+          {
+            "feature": "holiday",
+            "column": 1,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "workingday",
+            "column": 2,
+            "lower": 0.5,
+            "upper": null
+          },
+          {
+            "feature": "windspeed",
+            "column": 6,
+            "lower": null,
+            "upper": 25.99934959411621
+          },
+          {
+            "feature": "season_1",
+            "column": 7,
+            "lower": 0.5,
+            "upper": null
+          },
+          {
+            "feature": "weather_3",
+            "column": 13,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "year",
+            "column": 18,
+            "lower": 0.5,
+            "upper": null
+          }
+        ],
+        "hallucination": {
+          "selections": 13610,
+          "practical_only": 24,
+          "full_only": 51,
+          "covered": 12321,
+          "rho": 0.034025,
+          "penalty": 0.005510653930933138,
+          "lower_bound": 0.8944893460690669,
+          "coverage": 0.9052902277736958,
+          "coverage_interval": [
+            0.9003392483768233,
+            0.9102412071705683
+          ],
+          "penalty_se": 0.0006362302176860823,
+          "selecting_samples": 4834
+        },
+        "ordinary": {
+          "selections": 13610,
+          "practical_only": 24,
+          "full_only": 51,
+          "covered": 12321,
+          "rho": 0.034025,
+          "penalty": 0.005510653930933138,
+          "lower_bound": 0.8944893460690669,
+          "coverage": 0.9052902277736958,
+          "coverage_interval": [
+            0.9003392483768233,
+            0.9102412071705683
+          ],
+          "penalty_se": 0.0006362302176860823,
+          "selecting_samples": 4834
+        }
+      }
+    ]
+  },
+  "bio": {
+    "n": 22864,
+    "m": 20,
+    "K": 64,
+    "pool": 32011,
+    "cells": [
+      {
+        "label": "A",
+        "geometry": [
+          {
+            "feature": "F1",
+            "column": 1,
+            "lower": null,
+            "upper": 17316.124633789062
+          },
+          {
+            "feature": "F9",
+            "column": 9,
+            "lower": 35.306599617004395,
+            "upper": null
+          }
+        ],
+        "hallucination": {
+          "selections": 61280,
+          "practical_only": 0,
+          "full_only": 6,
+          "covered": 55216,
+          "rho": 0.1532,
+          "penalty": 9.7911227154047e-05,
+          "lower_bound": 0.8999020887728459,
+          "coverage": 0.9010443864229765,
+          "coverage_interval": [
+            0.8986783442479124,
+            0.9034104285980405
+          ],
+          "penalty_se": 3.9938242092087116e-05,
+          "selecting_samples": 3086
+        },
+        "ordinary": {
+          "selections": 61282,
+          "practical_only": 2,
+          "full_only": 6,
+          "covered": 55218,
+          "rho": 0.153205,
+          "penalty": 0.0001305440422962697,
+          "lower_bound": 0.8998694559577037,
+          "coverage": 0.9010476159394276,
+          "coverage_interval": [
+            0.8986816470802996,
+            0.9034135847985556
+          ],
+          "penalty_se": 4.612904036842946e-05,
+          "selecting_samples": 3088
+        }
+      },
+      {
+        "label": "B",
+        "geometry": [
+          {
+            "feature": "F4",
+            "column": 4,
+            "lower": null,
+            "upper": 107.99907207489014
+          },
+          {
+            "feature": "F9",
+            "column": 9,
+            "lower": 35.306599617004395,
+            "upper": null
+          }
+        ],
+        "hallucination": {
+          "selections": 38057,
+          "practical_only": 0,
+          "full_only": 2,
+          "covered": 34310,
+          "rho": 0.0951425,
+          "penalty": 5.255274982263447e-05,
+          "lower_bound": 0.8999474472501774,
+          "coverage": 0.9015424232072943,
+          "coverage_interval": [
+            0.8985566330703424,
+            0.9045282133442462
+          ],
+          "penalty_se": 3.714486873690195e-05,
+          "selecting_samples": 1934
+        },
+        "ordinary": {
+          "selections": 38057,
+          "practical_only": 0,
+          "full_only": 2,
+          "covered": 34310,
+          "rho": 0.0951425,
+          "penalty": 5.255274982263447e-05,
+          "lower_bound": 0.8999474472501774,
+          "coverage": 0.9015424232072943,
+          "coverage_interval": [
+            0.8985566330703424,
+            0.9045282133442462
+          ],
+          "penalty_se": 3.714486873690195e-05,
+          "selecting_samples": 1934
+        }
+      },
+      {
+        "label": "C",
+        "geometry": [
+          {
+            "feature": "F1",
+            "column": 1,
+            "lower": null,
+            "upper": 17316.124633789062
+          },
+          {
+            "feature": "F2",
+            "column": 2,
+            "lower": null,
+            "upper": 6447.2998046875
+          },
+          {
+            "feature": "F3",
+            "column": 3,
+            "lower": 0.21379750221967697,
+            "upper": 0.33509500324726105
+          },
+          {
+            "feature": "F4",
+            "column": 4,
+            "lower": null,
+            "upper": 195.10504341125488
+          },
+          {
+            "feature": "F5",
+            "column": 5,
+            "lower": null,
+            "upper": 2393407.359375
+          },
+          {
+            "feature": "F6",
+            "column": 6,
+            "lower": null,
+            "upper": 255.83369541168213
+          },
+          {
+            "feature": "F9",
+            "column": 9,
+            "lower": null,
+            "upper": 35.306599617004395
+          }
+        ],
+        "hallucination": {
+          "selections": 6168,
+          "practical_only": 0,
+          "full_only": 1,
+          "covered": 5549,
+          "rho": 0.01542,
+          "penalty": 0.00016212710765239947,
+          "lower_bound": 0.8998378728923476,
+          "coverage": 0.8996433203631647,
+          "coverage_interval": [
+            0.8923884275008359,
+            0.9068982132254936
+          ],
+          "penalty_se": 0.00016201925337358203,
+          "selecting_samples": 593
+        },
+        "ordinary": {
+          "selections": 6168,
+          "practical_only": 0,
+          "full_only": 1,
+          "covered": 5549,
+          "rho": 0.01542,
+          "penalty": 0.00016212710765239947,
+          "lower_bound": 0.8998378728923476,
+          "coverage": 0.8996433203631647,
+          "coverage_interval": [
+            0.8923884275008359,
+            0.9068982132254936
+          ],
+          "penalty_se": 0.00016201925337358203,
+          "selecting_samples": 593
+        }
+      },
+      {
+        "label": "D",
+        "geometry": [
+          {
+            "feature": "F9",
+            "column": 9,
+            "lower": null,
+            "upper": 35.306599617004395
+          }
+        ],
+        "hallucination": {
+          "selections": 144204,
+          "practical_only": 1,
+          "full_only": 11,
+          "covered": 129698,
+          "rho": 0.36051,
+          "penalty": 8.321544478655238e-05,
+          "lower_bound": 0.8999167845552135,
+          "coverage": 0.8994063964938559,
+          "coverage_interval": [
+            0.8978630409076631,
+            0.9009497520800487
+          ],
+          "penalty_se": 2.4012178739186703e-05,
+          "selecting_samples": 7183
+        },
+        "ordinary": {
+          "selections": 144204,
+          "practical_only": 1,
+          "full_only": 11,
+          "covered": 129698,
+          "rho": 0.36051,
+          "penalty": 8.321544478655238e-05,
+          "lower_bound": 0.8999167845552135,
+          "coverage": 0.8994063964938559,
+          "coverage_interval": [
+            0.8978630409076631,
+            0.9009497520800487
+          ],
+          "penalty_se": 2.4012178739186703e-05,
+          "selecting_samples": 7183
+        }
+      }
+    ]
+  },
+  "community": {
+    "n": 997,
+    "m": 20,
+    "K": 32,
+    "pool": 1396,
+    "cells": [
+      {
+        "label": "A",
+        "geometry": [
+          {
+            "feature": "medIncome",
+            "column": 13,
+            "lower": 0.525000000372529,
+            "upper": null
+          },
+          {
+            "feature": "pctWSocSec",
+            "column": 17,
+            "lower": 0.5299999993294477,
+            "upper": null
+          }
+        ],
+        "hallucination": {
+          "selections": 5271,
+          "practical_only": 62,
+          "full_only": 8,
+          "covered": 4804,
+          "rho": 0.0131775,
+          "penalty": 0.013280212483399735,
+          "lower_bound": 0.8867197875166003,
+          "coverage": 0.9114020110036046,
+          "coverage_interval": [
+            0.9038606438095688,
+            0.9189433781976405
+          ],
+          "penalty_se": 0.001607967706284551,
+          "selecting_samples": 3377
+        },
+        "ordinary": {
+          "selections": 5203,
+          "practical_only": 63,
+          "full_only": 77,
+          "covered": 4744,
+          "rho": 0.0130075,
+          "penalty": 0.026907553334614646,
+          "lower_bound": 0.8730924466653853,
+          "coverage": 0.9117816644243706,
+          "coverage_interval": [
+            0.904202854291919,
+            0.9193604745568221
+          ],
+          "penalty_se": 0.0025880776519078765,
+          "selecting_samples": 3324
+        }
+      },
+      {
+        "label": "B",
+        "geometry": [
+          {
+            "feature": "racePctHisp",
+            "column": 6,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "medIncome",
+            "column": 13,
+            "lower": null,
+            "upper": 0.525000000372529
+          },
+          {
+            "feature": "pctWFarmSelf",
+            "column": 15,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "medFamInc",
+            "column": 20,
+            "lower": null,
+            "upper": 0.5350000001490116
+          },
+          {
+            "feature": "blackPerCap",
+            "column": 23,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "MedRent",
+            "column": 86,
+            "lower": null,
+            "upper": 0.5350000001490116
+          },
+          {
+            "feature": "PctSameCity85",
+            "column": 95,
+            "lower": 0.4950000047683716,
+            "upper": null
+          },
+          {
+            "feature": "PctUsePubTrans",
+            "column": 99,
+            "lower": null,
+            "upper": 0.5
+          }
+        ],
+        "hallucination": {
+          "selections": 3651,
+          "practical_only": 0,
+          "full_only": 50,
+          "covered": 3340,
+          "rho": 0.0091275,
+          "penalty": 0.013694878115584772,
+          "lower_bound": 0.8863051218844152,
+          "coverage": 0.9148178581210628,
+          "coverage_interval": [
+            0.9062675242816769,
+            0.9233681919604486
+          ],
+          "penalty_se": 0.0019010672350553198,
+          "selecting_samples": 231
+        },
+        "ordinary": {
+          "selections": 3658,
+          "practical_only": 7,
+          "full_only": 50,
+          "covered": 3346,
+          "rho": 0.009145,
+          "penalty": 0.01558228540185894,
+          "lower_bound": 0.8844177145981411,
+          "coverage": 0.91470749043193,
+          "coverage_interval": [
+            0.9061636366919716,
+            0.9232513441718884
+          ],
+          "penalty_se": 0.002171660072047375,
+          "selecting_samples": 235
+        }
+      },
+      {
+        "label": "C",
+        "geometry": [
+          {
+            "feature": "medIncome",
+            "column": 13,
+            "lower": null,
+            "upper": 0.525000000372529
+          },
+          {
+            "feature": "medFamInc",
+            "column": 20,
+            "lower": null,
+            "upper": 0.5350000001490116
+          },
+          {
+            "feature": "blackPerCap",
+            "column": 23,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "indianPerCap",
+            "column": 24,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "PctNotSpeakEnglWell",
+            "column": 62,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "MedRent",
+            "column": 86,
+            "lower": null,
+            "upper": 0.5350000001490116
+          },
+          {
+            "feature": "PctSameCity85",
+            "column": 95,
+            "lower": 0.4950000047683716,
+            "upper": null
+          },
+          {
+            "feature": "PctUsePubTrans",
+            "column": 99,
+            "lower": null,
+            "upper": 0.5
+          }
+        ],
+        "hallucination": {
+          "selections": 2759,
+          "practical_only": 0,
+          "full_only": 31,
+          "covered": 2518,
+          "rho": 0.0068975,
+          "penalty": 0.011235955056179775,
+          "lower_bound": 0.8887640449438202,
+          "coverage": 0.9126495106922798,
+          "coverage_interval": [
+            0.9025941019672534,
+            0.9227049194173063
+          ],
+          "penalty_se": 0.0019048378415628718,
+          "selecting_samples": 150
+        },
+        "ordinary": {
+          "selections": 2759,
+          "practical_only": 0,
+          "full_only": 31,
+          "covered": 2518,
+          "rho": 0.0068975,
+          "penalty": 0.011235955056179775,
+          "lower_bound": 0.8887640449438202,
+          "coverage": 0.9126495106922798,
+          "coverage_interval": [
+            0.9025941019672534,
+            0.9227049194173063
+          ],
+          "penalty_se": 0.0019048378415628718,
+          "selecting_samples": 150
+        }
+      },
+      {
+        "label": "D",
+        "geometry": [
+          {
+            "feature": "racePctAsian",
+            "column": 5,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "medIncome",
+            "column": 13,
+            "lower": null,
+            "upper": 0.525000000372529
+          },
+          {
+            "feature": "medFamInc",
+            "column": 20,
+            "lower": null,
+            "upper": 0.5350000001490116
+          },
+          {
+            "feature": "blackPerCap",
+            "column": 23,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "PctNotSpeakEnglWell",
+            "column": 62,
+            "lower": null,
+            "upper": 0.5
+          },
+          {
+            "feature": "MedRent",
+            "column": 86,
+            "lower": null,
+            "upper": 0.5350000001490116
+          },
+          {
+            "feature": "PctSameCity85",
+            "column": 95,
+            "lower": 0.4950000047683716,
+            "upper": null
+          },
+          {
+            "feature": "PctUsePubTrans",
+            "column": 99,
+            "lower": null,
+            "upper": 0.5
+          }
+        ],
+        "hallucination": {
+          "selections": 4682,
+          "practical_only": 0,
+          "full_only": 55,
+          "covered": 4280,
+          "rho": 0.011705,
+          "penalty": 0.011747116616830415,
+          "lower_bound": 0.8882528833831697,
+          "coverage": 0.9141392567278941,
+          "coverage_interval": [
+            0.9066971697169343,
+            0.9215813437388539
+          ],
+          "penalty_se": 0.0016459521583791084,
+          "selecting_samples": 254
+        },
+        "ordinary": {
+          "selections": 4708,
+          "practical_only": 23,
+          "full_only": 52,
+          "covered": 4303,
+          "rho": 0.01177,
+          "penalty": 0.0159303313508921,
+          "lower_bound": 0.884069668649108,
+          "coverage": 0.9139762107051826,
+          "coverage_interval": [
+            0.9065421786901471,
+            0.9214102427202182
+          ],
+          "penalty_se": 0.0020341674334496723,
+          "selecting_samples": 272
+        }
+      }
+    ]
+  },
+  "concrete": {
+    "n": 514,
+    "m": 20,
+    "K": 8,
+    "pool": 721,
+    "cells": [
+      {
+        "label": "A",
+        "geometry": [
+          {
+            "feature": "superplasticizer",
+            "column": 5,
+            "lower": null,
+            "upper": 16.100000381469727
+          },
+          {
+            "feature": "fine aggregate",
+            "column": 7,
+            "lower": null,
+            "upper": 793.2999877929688
+          }
+        ],
+        "hallucination": {
+          "selections": 92128,
+          "practical_only": 3,
+          "full_only": 823,
+          "covered": 83675,
+          "rho": 0.23032,
+          "penalty": 0.008965786731503994,
+          "lower_bound": 0.8910342132684961,
+          "coverage": 0.908247221257381,
+          "coverage_interval": [
+            0.906473015981112,
+            0.91002142653365
+          ],
+          "penalty_se": 0.000299587617688262,
+          "selecting_samples": 4004
+        },
+        "ordinary": {
+          "selections": 92513,
+          "practical_only": 388,
+          "full_only": 823,
+          "covered": 84033,
+          "rho": 0.2312825,
+          "penalty": 0.013090052208878752,
+          "lower_bound": 0.8869099477911213,
+          "coverage": 0.9083372066628473,
+          "coverage_interval": [
+            0.9065674680954665,
+            0.9101069452302282
+          ],
+          "penalty_se": 0.00042041259579733605,
+          "selecting_samples": 4258
+        }
+      },
+      {
+        "label": "B",
+        "geometry": [
+          {
+            "feature": "fly ash",
+            "column": 3,
+            "lower": null,
+            "upper": 48.75
+          },
+          {
+            "feature": "superplasticizer",
+            "column": 5,
+            "lower": null,
+            "upper": 16.100000381469727
+          },
+          {
+            "feature": "fine aggregate",
+            "column": 7,
+            "lower": null,
+            "upper": 793.2999877929688
+          }
+        ],
+        "hallucination": {
+          "selections": 23601,
+          "practical_only": 6,
+          "full_only": 198,
+          "covered": 21458,
+          "rho": 0.0590025,
+          "penalty": 0.00864370153807042,
+          "lower_bound": 0.8913562984619297,
+          "coverage": 0.9091987627642897,
+          "coverage_interval": [
+            0.9056299134640362,
+            0.9127676120645432
+          ],
+          "penalty_se": 0.0005864449500206077,
+          "selecting_samples": 1650
+        },
+        "ordinary": {
+          "selections": 23756,
+          "practical_only": 161,
+          "full_only": 198,
+          "covered": 21603,
+          "rho": 0.05939,
+          "penalty": 0.015111971712409496,
+          "lower_bound": 0.8848880282875905,
+          "coverage": 0.9093702643542684,
+          "coverage_interval": [
+            0.9058165313218405,
+            0.9129239973866963
+          ],
+          "penalty_se": 0.0009314823020886669,
+          "selecting_samples": 1751
+        }
+      },
+      {
+        "label": "C",
+        "geometry": [
+          {
+            "feature": "superplasticizer",
+            "column": 5,
+            "lower": null,
+            "upper": 16.100000381469727
+          },
+          {
+            "feature": "fine aggregate",
+            "column": 7,
+            "lower": 793.2999877929688,
+            "upper": 892.9499816894531
+          }
+        ],
+        "hallucination": {
+          "selections": 4700,
+          "practical_only": 75,
+          "full_only": 30,
+          "covered": 4209,
+          "rho": 0.01175,
+          "penalty": 0.022340425531914895,
+          "lower_bound": 0.8776595744680852,
+          "coverage": 0.895531914893617,
+          "coverage_interval": [
+            0.8874773542646076,
+            0.9035864755226265
+          ],
+          "penalty_se": 0.002385660232611527,
+          "selecting_samples": 458
+        },
+        "ordinary": {
+          "selections": 4725,
+          "practical_only": 100,
+          "full_only": 30,
+          "covered": 4234,
+          "rho": 0.0118125,
+          "penalty": 0.027513227513227514,
+          "lower_bound": 0.8724867724867725,
+          "coverage": 0.896084656084656,
+          "coverage_interval": [
+            0.8880780627366943,
+            0.9040912494326178
+          ],
+          "penalty_se": 0.0027920879536081863,
+          "selecting_samples": 477
+        }
+      },
+      {
+        "label": "D",
+        "geometry": [
+          {
+            "feature": "superplasticizer",
+            "column": 5,
+            "lower": 16.100000381469727,
+            "upper": null
+          }
+        ],
+        "hallucination": {
+          "selections": 21424,
+          "practical_only": 0,
+          "full_only": 0,
+          "covered": 19878,
+          "rho": 0.05356,
+          "penalty": 0.0,
+          "lower_bound": 0.9,
+          "coverage": 0.9278379387602689,
+          "coverage_interval": [
+            0.924457894294402,
+            0.9312179832261358
+          ],
+          "penalty_se": 0.0,
+          "selecting_samples": 8796
+        },
+        "ordinary": {
+          "selections": 21371,
+          "practical_only": 0,
+          "full_only": 53,
+          "covered": 19833,
+          "rho": 0.0534275,
+          "penalty": 0.002479996256609424,
+          "lower_bound": 0.8975200037433906,
+          "coverage": 0.9280333161761265,
+          "coverage_interval": [
+            0.9246528076196439,
+            0.9314138247326091
+          ],
+          "penalty_se": 0.0005323266319958454,
+          "selecting_samples": 8768
+        }
+      }
+    ]
+  },
+  "homes": {
+    "n": 10807,
+    "m": 20,
+    "K": 32,
+    "pool": 15130,
+    "cells": [
+      {
+        "label": "A",
+        "geometry": [
+          {
+            "feature": "grade",
+            "column": 9,
+            "lower": 6.75,
+            "upper": 8.0
+          },
+          {
+            "feature": "long",
+            "column": 16,
+            "lower": null,
+            "upper": -121.91450119018555
+          },
+          {
+            "feature": "sqft_lot15",
+            "column": 18,
+            "lower": null,
+            "upper": 28007.0625
+          }
+        ],
+        "hallucination": {
+          "selections": 86579,
+          "practical_only": 0,
+          "full_only": 26,
+          "covered": 77781,
+          "rho": 0.2164475,
+          "penalty": 0.0003003037688122986,
+          "lower_bound": 0.8996996962311877,
+          "coverage": 0.8983818246918999,
+          "coverage_interval": [
+            0.8963968294056256,
+            0.9003668199781741
+          ],
+          "penalty_se": 5.867261123265379e-05,
+          "selecting_samples": 3353
+        },
+        "ordinary": {
+          "selections": 86579,
+          "practical_only": 0,
+          "full_only": 26,
+          "covered": 77781,
+          "rho": 0.2164475,
+          "penalty": 0.0003003037688122986,
+          "lower_bound": 0.8996996962311877,
+          "coverage": 0.8983818246918999,
+          "coverage_interval": [
+            0.8963968294056256,
+            0.9003668199781741
+          ],
+          "penalty_se": 5.867261123265379e-05,
+          "selecting_samples": 3353
+        }
+      },
+      {
+        "label": "B",
+        "geometry": [
+          {
+            "feature": "floors",
+            "column": 5,
+            "lower": null,
+            "upper": 2.25
+          },
+          {
+            "feature": "grade",
+            "column": 9,
+            "lower": 5.5,
+            "upper": 8.0
+          },
+          {
+            "feature": "long",
+            "column": 16,
+            "lower": null,
+            "upper": -121.91450119018555
+          },
+          {
+            "feature": "sqft_lot15",
+            "column": 18,
+            "lower": null,
+            "upper": 28007.0625
+          }
+        ],
+        "hallucination": {
+          "selections": 46453,
+          "practical_only": 0,
+          "full_only": 6,
+          "covered": 41830,
+          "rho": 0.1161325,
+          "penalty": 0.00012916280972165414,
+          "lower_bound": 0.8998708371902784,
+          "coverage": 0.9004800551094655,
+          "coverage_interval": [
+            0.8977283160199722,
+            0.9032317941989588
+          ],
+          "penalty_se": 5.265020103224744e-05,
+          "selecting_samples": 1637
+        },
+        "ordinary": {
+          "selections": 46453,
+          "practical_only": 0,
+          "full_only": 6,
+          "covered": 41830,
+          "rho": 0.1161325,
+          "penalty": 0.00012916280972165414,
+          "lower_bound": 0.8998708371902784,
+          "coverage": 0.9004800551094655,
+          "coverage_interval": [
+            0.8977283160199722,
+            0.9032317941989588
+          ],
+          "penalty_se": 5.265020103224744e-05,
+          "selecting_samples": 1637
+        }
+      },
+      {
+        "label": "C",
+        "geometry": [
+          {
+            "feature": "floors",
+            "column": 5,
+            "lower": null,
+            "upper": 2.25
+          },
+          {
+            "feature": "grade",
+            "column": 9,
+            "lower": 6.75,
+            "upper": 8.0
+          },
+          {
+            "feature": "lat",
+            "column": 15,
+            "lower": 47.469900131225586,
+            "upper": null
+          },
+          {
+            "feature": "long",
+            "column": 16,
+            "lower": null,
+            "upper": -121.91450119018555
+          }
+        ],
+        "hallucination": {
+          "selections": 9285,
+          "practical_only": 3,
+          "full_only": 7,
+          "covered": 8359,
+          "rho": 0.0232125,
+          "penalty": 0.0010770059235325794,
+          "lower_bound": 0.8989229940764675,
+          "coverage": 0.9002692514808831,
+          "coverage_interval": [
+            0.8942328250301937,
+            0.9063056779315725
+          ],
+          "penalty_se": 0.00033941831857527274,
+          "selecting_samples": 506
+        },
+        "ordinary": {
+          "selections": 9286,
+          "practical_only": 4,
+          "full_only": 7,
+          "covered": 8360,
+          "rho": 0.023215,
+          "penalty": 0.0011845789360327374,
+          "lower_bound": 0.8988154210639673,
+          "coverage": 0.9002799913848805,
+          "coverage_interval": [
+            0.8942441835123227,
+            0.9063157992574382
+          ],
+          "penalty_se": 0.0003562740427997951,
+          "selecting_samples": 507
+        }
+      },
+      {
+        "label": "D",
+        "geometry": [
+          {
+            "feature": "grade",
+            "column": 9,
+            "lower": 5.5,
+            "upper": 6.75
+          },
+          {
+            "feature": "long",
+            "column": 16,
+            "lower": null,
+            "upper": -121.91450119018555
+          },
+          {
+            "feature": "sqft_lot15",
+            "column": 18,
+            "lower": null,
+            "upper": 28007.0625
+          }
+        ],
+        "hallucination": {
+          "selections": 11168,
+          "practical_only": 0,
+          "full_only": 4,
+          "covered": 10109,
+          "rho": 0.02792,
+          "penalty": 0.00035816618911174784,
+          "lower_bound": 0.8996418338108882,
+          "coverage": 0.9051755014326648,
+          "coverage_interval": [
+            0.8997397863931312,
+            0.9106112164721983
+          ],
+          "penalty_se": 0.00017902715772607052,
+          "selecting_samples": 3076
+        },
+        "ordinary": {
+          "selections": 11168,
+          "practical_only": 0,
+          "full_only": 4,
+          "covered": 10109,
+          "rho": 0.02792,
+          "penalty": 0.00035816618911174784,
+          "lower_bound": 0.8996418338108882,
+          "coverage": 0.9051755014326648,
+          "coverage_interval": [
+            0.8997397863931312,
+            0.9106112164721983
+          ],
+          "penalty_se": 0.00017902715772607052,
+          "selecting_samples": 3076
+        }
+      }
+    ]
+  },
+  "star": {
+    "n": 1080,
+    "m": 20,
+    "K": 4,
+    "pool": 1513,
+    "cells": [
+      {
+        "label": "A",
+        "geometry": [
+          {
+            "feature": "degreek",
+            "column": 16,
+            "lower": null,
+            "upper": 1.5
+          },
+          {
+            "feature": "experiencek",
+            "column": 24,
+            "lower": null,
+            "upper": 13.5
+          }
+        ],
+        "hallucination": {
+          "selections": 49399,
+          "practical_only": 37,
+          "full_only": 280,
+          "covered": 44741,
+          "rho": 0.1234975,
+          "penalty": 0.006417133950079961,
+          "lower_bound": 0.8935828660499201,
+          "coverage": 0.9057065932508755,
+          "coverage_interval": [
+            0.9032028406630781,
+            0.908210345838673
+          ],
+          "penalty_se": 0.00036476655348140815,
+          "selecting_samples": 1671
+        },
+        "ordinary": {
+          "selections": 49439,
+          "practical_only": 71,
+          "full_only": 274,
+          "covered": 44771,
+          "rho": 0.1235975,
+          "penalty": 0.006978296486579421,
+          "lower_bound": 0.8930217035134206,
+          "coverage": 0.9055806144946298,
+          "coverage_interval": [
+            0.9030771377565937,
+            0.9080840912326659
+          ],
+          "penalty_se": 0.0003903668014900856,
+          "selecting_samples": 1698
+        }
+      },
+      {
+        "label": "B",
+        "geometry": [
+          {
+            "feature": "degreek",
+            "column": 16,
+            "lower": null,
+            "upper": 1.5
+          },
+          {
+            "feature": "ladderk",
+            "column": 20,
+            "lower": null,
+            "upper": 2.5
+          }
+        ],
+        "hallucination": {
+          "selections": 22458,
+          "practical_only": 23,
+          "full_only": 64,
+          "covered": 20266,
+          "rho": 0.056145,
+          "penalty": 0.0038738979428266096,
+          "lower_bound": 0.8961261020571734,
+          "coverage": 0.9023955828657939,
+          "coverage_interval": [
+            0.8985618271937932,
+            0.9062293385377946
+          ],
+          "penalty_se": 0.0004223939990837868,
+          "selecting_samples": 701
+        },
+        "ordinary": {
+          "selections": 22482,
+          "practical_only": 45,
+          "full_only": 62,
+          "covered": 20284,
+          "rho": 0.056205,
+          "penalty": 0.00475936304599235,
+          "lower_bound": 0.8952406369540077,
+          "coverage": 0.9022328974290543,
+          "coverage_interval": [
+            0.8984013628834839,
+            0.9060644319746247
+          ],
+          "penalty_se": 0.0004959904341978278,
+          "selecting_samples": 718
+        }
+      },
+      {
+        "label": "C",
+        "geometry": [
+          {
+            "feature": "degreek",
+            "column": 16,
+            "lower": null,
+            "upper": 1.5
+          },
+          {
+            "feature": "experiencek",
+            "column": 24,
+            "lower": null,
+            "upper": 13.5
+          },
+          {
+            "feature": "tethnicityk",
+            "column": 28,
+            "lower": null,
+            "upper": 0.5
+          }
+        ],
+        "hallucination": {
+          "selections": 6057,
+          "practical_only": 0,
+          "full_only": 44,
+          "covered": 5492,
+          "rho": 0.0151425,
+          "penalty": 0.0072643222717516925,
+          "lower_bound": 0.8927356777282484,
+          "coverage": 0.9067194981013703,
+          "coverage_interval": [
+            0.8997602810823899,
+            0.9136787151203507
+          ],
+          "penalty_se": 0.0011903874969464037,
+          "selecting_samples": 227
+        },
+        "ordinary": {
+          "selections": 6057,
+          "practical_only": 0,
+          "full_only": 44,
+          "covered": 5492,
+          "rho": 0.0151425,
+          "penalty": 0.0072643222717516925,
+          "lower_bound": 0.8927356777282484,
+          "coverage": 0.9067194981013703,
+          "coverage_interval": [
+            0.8997602810823899,
+            0.9136787151203507
+          ],
+          "penalty_se": 0.0011903874969464037,
+          "selecting_samples": 227
+        }
+      },
+      {
+        "label": "D",
+        "geometry": [
+          {
+            "feature": "degreek",
+            "column": 16,
+            "lower": null,
+            "upper": 1.5
+          },
+          {
+            "feature": "experiencek",
+            "column": 24,
+            "lower": 13.5,
+            "upper": null
+          }
+        ],
+        "hallucination": {
+          "selections": 13859,
+          "practical_only": 102,
+          "full_only": 91,
+          "covered": 12524,
+          "rho": 0.0346475,
+          "penalty": 0.01392596868460928,
+          "lower_bound": 0.8860740313153908,
+          "coverage": 0.9036727036582726,
+          "coverage_interval": [
+            0.8988076204075154,
+            0.9085377869090298
+          ],
+          "penalty_se": 0.0010121212415340481,
+          "selecting_samples": 1823
+        },
+        "ordinary": {
+          "selections": 13885,
+          "practical_only": 128,
+          "full_only": 91,
+          "covered": 12550,
+          "rho": 0.0347125,
+          "penalty": 0.015772416276557438,
+          "lower_bound": 0.8842275837234426,
+          "coverage": 0.9038530788620814,
+          "coverage_interval": [
+            0.8989968918778753,
+            0.9087092658462875
+          ],
+          "penalty_se": 0.0011049374456856898,
+          "selecting_samples": 1844
+        }
+      }
+    ]
+  },
+  "legislator": {
+    "n": 1447,
+    "m": 200,
+    "K": 7,
+    "pool": 1809,
+    "cells": [
+      {
+        "label": "A",
+        "geometry": [
+          {
+            "feature": "NOMINATE 1",
+            "column": 1,
+            "lower": null,
+            "upper": 0.0
+          }
+        ],
+        "hallucination": {
+          "selections": 41413,
+          "practical_only": 74,
+          "full_only": 53,
+          "covered": 37304,
+          "rho": 0.1035325,
+          "penalty": 0.0030666698862675972,
+          "lower_bound": 0.8969333301137324,
+          "coverage": 0.9007799483254051,
+          "coverage_interval": [
+            0.8979667691440434,
+            0.9035931275067668
+          ],
+          "penalty_se": 0.00027531759805285753,
+          "selecting_samples": 2199
+        },
+        "ordinary": {
+          "selections": 41413,
+          "practical_only": 74,
+          "full_only": 53,
+          "covered": 37304,
+          "rho": 0.1035325,
+          "penalty": 0.0030666698862675972,
+          "lower_bound": 0.8969333301137324,
+          "coverage": 0.9007799483254051,
+          "coverage_interval": [
+            0.8979667691440434,
+            0.9035931275067668
+          ],
+          "penalty_se": 0.00027531759805285753,
+          "selecting_samples": 2199
+        }
+      },
+      {
+        "label": "B",
+        "geometry": [
+          {
+            "feature": "NOMINATE 1",
+            "column": 1,
+            "lower": 0.0,
+            "upper": 0.5
+          },
+          {
+            "feature": "NOMINATE 2",
+            "column": 2,
+            "lower": null,
+            "upper": 0.0
+          }
+        ],
+        "hallucination": {
+          "selections": 12924,
+          "practical_only": 174,
+          "full_only": 2,
+          "covered": 11656,
+          "rho": 0.03231,
+          "penalty": 0.013618074899411947,
+          "lower_bound": 0.8863819251005881,
+          "coverage": 0.9018879603837822,
+          "coverage_interval": [
+            0.8967357281551974,
+            0.9070401926123669
+          ],
+          "penalty_se": 0.0010660708941952353,
+          "selecting_samples": 1964
+        },
+        "ordinary": {
+          "selections": 12924,
+          "practical_only": 174,
+          "full_only": 2,
+          "covered": 11656,
+          "rho": 0.03231,
+          "penalty": 0.013618074899411947,
+          "lower_bound": 0.8863819251005881,
+          "coverage": 0.9018879603837822,
+          "coverage_interval": [
+            0.8967357281551974,
+            0.9070401926123669
+          ],
+          "penalty_se": 0.0010660708941952353,
+          "selecting_samples": 1964
+        }
+      },
+      {
+        "label": "C",
+        "geometry": [
+          {
+            "feature": "NOMINATE 1",
+            "column": 1,
+            "lower": 0.0,
+            "upper": null
+          },
+          {
+            "feature": "NOMINATE 2",
+            "column": 2,
+            "lower": null,
+            "upper": 0.0
+          }
+        ],
+        "hallucination": {
+          "selections": 5875,
+          "practical_only": 47,
+          "full_only": 12,
+          "covered": 5317,
+          "rho": 0.0146875,
+          "penalty": 0.010042553191489362,
+          "lower_bound": 0.8899574468085106,
+          "coverage": 0.9050212765957447,
+          "coverage_interval": [
+            0.8975107306126764,
+            0.912531822578813
+          ],
+          "penalty_se": 0.001343153337911127,
+          "selecting_samples": 590
+        },
+        "ordinary": {
+          "selections": 5875,
+          "practical_only": 47,
+          "full_only": 12,
+          "covered": 5317,
+          "rho": 0.0146875,
+          "penalty": 0.010042553191489362,
+          "lower_bound": 0.8899574468085106,
+          "coverage": 0.9050212765957447,
+          "coverage_interval": [
+            0.8975107306126764,
+            0.912531822578813
+          ],
+          "penalty_se": 0.001343153337911127,
+          "selecting_samples": 590
+        }
+      },
+      {
+        "label": "D",
+        "geometry": [
+          {
+            "feature": "NOMINATE 1",
+            "column": 1,
+            "lower": 0.5,
+            "upper": null
+          }
+        ],
+        "hallucination": {
+          "selections": 12414,
+          "practical_only": 2,
+          "full_only": 19,
+          "covered": 11245,
+          "rho": 0.031035,
+          "penalty": 0.0016916384726921219,
+          "lower_bound": 0.8983083615273079,
+          "coverage": 0.9058321250201385,
+          "coverage_interval": [
+            0.9007541952659828,
+            0.9109100547742943
+          ],
+          "penalty_se": 0.0003680705422981097,
+          "selecting_samples": 1794
+        },
+        "ordinary": {
+          "selections": 12414,
+          "practical_only": 2,
+          "full_only": 19,
+          "covered": 11245,
+          "rho": 0.031035,
+          "penalty": 0.0016916384726921219,
+          "lower_bound": 0.8983083615273079,
+          "coverage": 0.9058321250201385,
+          "coverage_interval": [
+            0.9007541952659828,
+            0.9109100547742943
+          ],
+          "penalty_se": 0.0003680705422981097,
+          "selecting_samples": 1794
+        }
+      }
+    ]
+  },
+  "skin": {
+    "n": 219,
+    "m": 10,
+    "K": 20,
+    "pool": 366,
+    "cells": [
+      {
+        "label": "A",
+        "geometry": [
+          {
+            "feature": "follicular papules",
+            "column": 7,
+            "lower": null,
+            "upper": 1.5
+          },
+          {
+            "feature": "knee and elbow involvement",
+            "column": 9,
+            "lower": 1.5,
+            "upper": 2.75
+          }
+        ],
+        "hallucination": {
+          "selections": 36655,
+          "practical_only": 81,
+          "full_only": 751,
+          "covered": 36636,
+          "rho": 0.0916375,
+          "penalty": 0.022698131223571137,
+          "lower_bound": 0.8773018687764289,
+          "coverage": 0.9994816532533078,
+          "coverage_interval": [
+            0.9991906551729044,
+            0.99968789346337
+          ],
+          "penalty_se": 0.0007940763807936815,
+          "selecting_samples": 36655
+        },
+        "ordinary": {
+          "selections": 37824,
+          "practical_only": 845,
+          "full_only": 346,
+          "covered": 37799,
+          "rho": 0.09456,
+          "penalty": 0.03148794416243655,
+          "lower_bound": 0.8685120558375635,
+          "coverage": 0.9993390439932318,
+          "coverage_interval": [
+            0.9990244521052456,
+            0.999572219887362
+          ],
+          "penalty_se": 0.0009063692218839293,
+          "selecting_samples": 37824
+        }
+      },
+      {
+        "label": "B",
+        "geometry": [
+          {
+            "feature": "follicular papules",
+            "column": 7,
+            "lower": 1.5,
+            "upper": null
+          }
+        ],
+        "hallucination": {
+          "selections": 23263,
+          "practical_only": 0,
+          "full_only": 0,
+          "covered": 22268,
+          "rho": 0.0581575,
+          "penalty": 0.0,
+          "lower_bound": 0.9,
+          "coverage": 0.9572282164811073,
+          "coverage_interval": [
+            0.9545488167600811,
+            0.9597926072243393
+          ],
+          "penalty_se": 0.0,
+          "selecting_samples": 23263
+        },
+        "ordinary": {
+          "selections": 22153,
+          "practical_only": 11,
+          "full_only": 1121,
+          "covered": 21218,
+          "rho": 0.0553825,
+          "penalty": 0.05109917392678193,
+          "lower_bound": 0.848900826073218,
+          "coverage": 0.9577935268360944,
+          "coverage_interval": [
+            0.9550625914335624,
+            0.9604035010103066
+          ],
+          "penalty_se": 0.001556351882743684,
+          "selecting_samples": 22153
+        }
+      },
+      {
+        "label": "C",
+        "geometry": [
+          {
+            "feature": "polygonal papules",
+            "column": 6,
+            "lower": null,
+            "upper": 1.5
+          },
+          {
+            "feature": "follicular papules",
+            "column": 7,
+            "lower": null,
+            "upper": 1.5
+          },
+          {
+            "feature": "knee and elbow involvement",
+            "column": 9,
+            "lower": 1.5,
+            "upper": 2.75
+          }
+        ],
+        "hallucination": {
+          "selections": 5716,
+          "practical_only": 6,
+          "full_only": 152,
+          "covered": 5716,
+          "rho": 0.01429,
+          "penalty": 0.027641707487753672,
+          "lower_bound": 0.8723582925122464,
+          "coverage": 1.0,
+          "coverage_interval": [
+            0.9993548479037846,
+            1.0
+          ],
+          "penalty_se": 0.002226966393226225,
+          "selecting_samples": 5716
+        },
+        "ordinary": {
+          "selections": 5854,
+          "practical_only": 81,
+          "full_only": 89,
+          "covered": 5852,
+          "rho": 0.014635,
+          "penalty": 0.029039972668261017,
+          "lower_bound": 0.870960027331739,
+          "coverage": 0.9996583532627263,
+          "coverage_interval": [
+            0.9987664051291143,
+            0.9999586223168301
+          ],
+          "penalty_se": 0.0022287883728779696,
+          "selecting_samples": 5854
+        }
+      },
+      {
+        "label": "D",
+        "geometry": [
+          {
+            "feature": "polygonal papules",
+            "column": 6,
+            "lower": 1.5,
+            "upper": 2.75
+          },
+          {
+            "feature": "follicular papules",
+            "column": 7,
+            "lower": null,
+            "upper": 1.5
+          },
+          {
+            "feature": "knee and elbow involvement",
+            "column": 9,
+            "lower": null,
+            "upper": 1.5
+          }
+        ],
+        "hallucination": {
+          "selections": 15133,
+          "practical_only": 30,
+          "full_only": 808,
+          "covered": 15075,
+          "rho": 0.0378325,
+          "penalty": 0.05537566906760061,
+          "lower_bound": 0.8446243309323994,
+          "coverage": 0.996167316460715,
+          "coverage_interval": [
+            0.9950481487003243,
+            0.9970884350776552
+          ],
+          "penalty_se": 0.001961479357244687,
+          "selecting_samples": 15133
+        },
+        "ordinary": {
+          "selections": 16458,
+          "practical_only": 1177,
+          "full_only": 630,
+          "covered": 16389,
+          "rho": 0.041145,
+          "penalty": 0.10979462875197472,
+          "lower_bound": 0.7902053712480253,
+          "coverage": 0.9958075100255195,
+          "coverage_interval": [
+            0.9946970912104031,
+            0.9967365720849635
+          ],
+          "penalty_se": 0.0025395850981054387,
+          "selecting_samples": 16458
+        }
+      }
+    ]
+  }
+}
