@@ -1,0 +1,1444 @@
+{
+  "1": {
+    "T": 400000,
+    "query_changes": 988,
+    "overall_coverage": 0.9033825,
+    "selected": [
+      6,
+      3,
+      10,
+      2
+    ],
+    "cells": [
+      {
+        "cell": 1,
+        "interval": [
+          0.0,
+          10.0
+        ],
+        "H_count": 167,
+        "H_only": 2,
+        "F_only": 0,
+        "disagreements": 2,
+        "covered": 150,
+        "rho": 0.0004175,
+        "delta": 5e-06,
+        "penalty": 0.011976047904191617,
+        "plugin": 0.8880239520958084,
+        "coverage": 0.8982035928143712,
+        "coverage_ci": [
+          0.8420206363609616,
+          0.9395730508747462
+        ],
+        "mean_cal_count": 499.0
+      },
+      {
+        "cell": 2,
+        "interval": [
+          0.0,
+          5.0
+        ],
+        "H_count": 69005,
+        "H_only": 101,
+        "F_only": 55,
+        "disagreements": 156,
+        "covered": 62120,
+        "rho": 0.1725125,
+        "delta": 0.00039,
+        "penalty": 0.0022607057459604375,
+        "plugin": 0.8977392942540395,
+        "coverage": 0.9002246214042461,
+        "coverage_ci": [
+          0.89796439988479,
+          0.9024511259077835
+        ],
+        "mean_cal_count": 249.29238460981088,
+        "simultaneous_lower": 0.8971703772333982
+      },
+      {
+        "cell": 3,
+        "interval": [
+          5.0,
+          10.0
+        ],
+        "H_count": 36542,
+        "H_only": 154,
+        "F_only": 131,
+        "disagreements": 285,
+        "covered": 32931,
+        "rho": 0.091355,
+        "delta": 0.0007125,
+        "penalty": 0.007799244704723332,
+        "plugin": 0.8922007552952766,
+        "coverage": 0.9011822013026107,
+        "coverage_ci": [
+          0.8980768814383688,
+          0.904223596200359
+        ],
+        "mean_cal_count": 249.4759181216135,
+        "simultaneous_lower": 0.8907233177743114
+      },
+      {
+        "cell": 4,
+        "interval": [
+          0.0,
+          2.5
+        ],
+        "H_count": 61379,
+        "H_only": 79,
+        "F_only": 11,
+        "disagreements": 90,
+        "covered": 55486,
+        "rho": 0.1534475,
+        "delta": 0.000225,
+        "penalty": 0.0014662995487055833,
+        "plugin": 0.8985337004512944,
+        "coverage": 0.9039899639942,
+        "coverage_ci": [
+          0.9016320234222599,
+          0.9063096290351693
+        ],
+        "mean_cal_count": 124.641294253735
+      },
+      {
+        "cell": 5,
+        "interval": [
+          2.5,
+          5.0
+        ],
+        "H_count": 51198,
+        "H_only": 65,
+        "F_only": 187,
+        "disagreements": 252,
+        "covered": 46383,
+        "rho": 0.127995,
+        "delta": 0.00063,
+        "penalty": 0.004922067268252666,
+        "plugin": 0.8950779327317474,
+        "coverage": 0.9059533575530294,
+        "coverage_ci": [
+          0.9033921217201095,
+          0.9084684614774363
+        ],
+        "mean_cal_count": 124.94970506660417
+      },
+      {
+        "cell": 6,
+        "interval": [
+          5.0,
+          7.5
+        ],
+        "H_count": 77461,
+        "H_only": 134,
+        "F_only": 59,
+        "disagreements": 193,
+        "covered": 69901,
+        "rho": 0.1936525,
+        "delta": 0.0004825,
+        "penalty": 0.002491576406191503,
+        "plugin": 0.8975084235938086,
+        "coverage": 0.9024024993222396,
+        "coverage_ci": [
+          0.9002910457260971,
+          0.9044837591285116
+        ],
+        "mean_cal_count": 124.6237977821097,
+        "simultaneous_lower": 0.8969492401803176
+      },
+      {
+        "cell": 7,
+        "interval": [
+          7.5,
+          10.0
+        ],
+        "H_count": 51125,
+        "H_only": 147,
+        "F_only": 247,
+        "disagreements": 394,
+        "covered": 46235,
+        "rho": 0.1278125,
+        "delta": 0.000985,
+        "penalty": 0.0077066014669926654,
+        "plugin": 0.8922933985330074,
+        "coverage": 0.9043520782396088,
+        "coverage_ci": [
+          0.9017698911131204,
+          0.9068882514094329
+        ],
+        "mean_cal_count": 124.95812224938875
+      },
+      {
+        "cell": 8,
+        "interval": [
+          0.0,
+          1.25
+        ],
+        "H_count": 1821,
+        "H_only": 11,
+        "F_only": 1,
+        "disagreements": 12,
+        "covered": 1641,
+        "rho": 0.0045525,
+        "delta": 3e-05,
+        "penalty": 0.006589785831960461,
+        "plugin": 0.8934102141680396,
+        "coverage": 0.9011532125205931,
+        "coverage_ci": [
+          0.8865175567012598,
+          0.9144812150593012
+        ],
+        "mean_cal_count": 61.968149368478855
+      },
+      {
+        "cell": 9,
+        "interval": [
+          1.25,
+          2.5
+        ],
+        "H_count": 1941,
+        "H_only": 0,
+        "F_only": 23,
+        "disagreements": 23,
+        "covered": 1782,
+        "rho": 0.0048525,
+        "delta": 5.75e-05,
+        "penalty": 0.01184956208140134,
+        "plugin": 0.8881504379185987,
+        "coverage": 0.9180834621329211,
+        "coverage_ci": [
+          0.9049841237617641,
+          0.9299024057924536
+        ],
+        "mean_cal_count": 62.854714064914994
+      },
+      {
+        "cell": 10,
+        "interval": [
+          2.5,
+          3.75
+        ],
+        "H_count": 7127,
+        "H_only": 77,
+        "F_only": 10,
+        "disagreements": 87,
+        "covered": 6363,
+        "rho": 0.0178175,
+        "delta": 0.0002175,
+        "penalty": 0.012207099761470464,
+        "plugin": 0.8877929002385295,
+        "coverage": 0.8928020204854777,
+        "coverage_ci": [
+          0.8853881822373609,
+          0.8998927733718913
+        ],
+        "mean_cal_count": 61.84214957204995,
+        "simultaneous_lower": 0.883217148407135
+      },
+      {
+        "cell": 11,
+        "interval": [
+          3.75,
+          5.0
+        ],
+        "H_count": 7183,
+        "H_only": 16,
+        "F_only": 62,
+        "disagreements": 78,
+        "covered": 6568,
+        "rho": 0.0179575,
+        "delta": 0.000195,
+        "penalty": 0.01085897257413337,
+        "plugin": 0.8891410274258666,
+        "coverage": 0.9143811777808715,
+        "coverage_ci": [
+          0.9076715167421548,
+          0.9207522275802149
+        ],
+        "mean_cal_count": 62.90463594598357
+      },
+      {
+        "cell": 12,
+        "interval": [
+          5.0,
+          6.25
+        ],
+        "H_count": 1983,
+        "H_only": 44,
+        "F_only": 3,
+        "disagreements": 47,
+        "covered": 1754,
+        "rho": 0.0049575,
+        "delta": 0.0001175,
+        "penalty": 0.023701462430660614,
+        "plugin": 0.8762985375693394,
+        "coverage": 0.8845184064548663,
+        "coverage_ci": [
+          0.8696276978565611,
+          0.8982610713318236
+        ],
+        "mean_cal_count": 61.58144225920323
+      },
+      {
+        "cell": 13,
+        "interval": [
+          6.25,
+          7.5
+        ],
+        "H_count": 2039,
+        "H_only": 16,
+        "F_only": 25,
+        "disagreements": 41,
+        "covered": 1854,
+        "rho": 0.0050975,
+        "delta": 0.0001025,
+        "penalty": 0.020107896027464444,
+        "plugin": 0.8798921039725356,
+        "coverage": 0.9092692496321726,
+        "coverage_ci": [
+          0.8959611885473817,
+          0.9213862795641393
+        ],
+        "mean_cal_count": 62.65669445806768
+      },
+      {
+        "cell": 14,
+        "interval": [
+          7.5,
+          8.75
+        ],
+        "H_count": 15466,
+        "H_only": 101,
+        "F_only": 14,
+        "disagreements": 115,
+        "covered": 13992,
+        "rho": 0.038665,
+        "delta": 0.0002875,
+        "penalty": 0.007435665330402173,
+        "plugin": 0.8925643346695978,
+        "coverage": 0.9046941678520626,
+        "coverage_ci": [
+          0.8999576632329381,
+          0.9092778188547838
+        ],
+        "mean_cal_count": 62.104487262382
+      },
+      {
+        "cell": 15,
+        "interval": [
+          8.75,
+          10.0
+        ],
+        "H_count": 15563,
+        "H_only": 41,
+        "F_only": 160,
+        "disagreements": 201,
+        "covered": 14193,
+        "rho": 0.0389075,
+        "delta": 0.0005025,
+        "penalty": 0.012915247702885048,
+        "plugin": 0.8870847522971149,
+        "coverage": 0.9119706997365546,
+        "coverage_ci": [
+          0.9074097015756778,
+          0.9163770189976862
+        ],
+        "mean_cal_count": 62.96922187238964
+      }
+    ]
+  },
+  "2": {
+    "T": 400000,
+    "query_changes": 2413,
+    "overall_coverage": 0.906485,
+    "selected": [
+      3,
+      6,
+      12,
+      16
+    ],
+    "cells": [
+      {
+        "cell": 3,
+        "interval": [
+          5.0,
+          10.0
+        ],
+        "H_count": 93210,
+        "H_only": 239,
+        "F_only": 276,
+        "disagreements": 515,
+        "covered": 84084,
+        "rho": 0.233025,
+        "delta": 0.0012875,
+        "penalty": 0.005525158244823517,
+        "plugin": 0.8944748417551766,
+        "coverage": 0.902092050209205,
+        "coverage_ci": [
+          0.9001662739059442,
+          0.9039927627722029
+        ],
+        "mean_cal_count": 249.48212638128956,
+        "simultaneous_lower": 0.8937259220491235
+      },
+      {
+        "cell": 5,
+        "interval": [
+          2.5,
+          5.0
+        ],
+        "H_count": 49335,
+        "H_only": 248,
+        "F_only": 302,
+        "disagreements": 550,
+        "covered": 44637,
+        "rho": 0.1233375,
+        "delta": 0.001375,
+        "penalty": 0.011148272017837236,
+        "plugin": 0.8888517279821628,
+        "coverage": 0.904773487382183,
+        "coverage_ci": [
+          0.9021493658817289,
+          0.9073498709622231
+        ],
+        "mean_cal_count": 124.85002533698186
+      },
+      {
+        "cell": 6,
+        "interval": [
+          5.0,
+          7.5
+        ],
+        "H_count": 29513,
+        "H_only": 165,
+        "F_only": 176,
+        "disagreements": 341,
+        "covered": 26667,
+        "rho": 0.0737825,
+        "delta": 0.0008525,
+        "penalty": 0.011554230339172567,
+        "plugin": 0.8884457696608274,
+        "coverage": 0.9035679192220377,
+        "coverage_ci": [
+          0.900143446177955,
+          0.9069127142191022
+        ],
+        "mean_cal_count": 124.8023243994172,
+        "simultaneous_lower": 0.8864189764734774
+      },
+      {
+        "cell": 7,
+        "interval": [
+          7.5,
+          10.0
+        ],
+        "H_count": 37840,
+        "H_only": 179,
+        "F_only": 106,
+        "disagreements": 285,
+        "covered": 34093,
+        "rho": 0.0946,
+        "delta": 0.0007125,
+        "penalty": 0.007531712473572939,
+        "plugin": 0.892468287526427,
+        "coverage": 0.9009778012684989,
+        "coverage_ci": [
+          0.8979242344290483,
+          0.9039696738803282
+        ],
+        "mean_cal_count": 124.52608350951374
+      },
+      {
+        "cell": 8,
+        "interval": [
+          0.0,
+          1.25
+        ],
+        "H_count": 889,
+        "H_only": 0,
+        "F_only": 0,
+        "disagreements": 0,
+        "covered": 816,
+        "rho": 0.0022225,
+        "delta": 0.0,
+        "penalty": 0.0,
+        "plugin": 0.9,
+        "coverage": 0.9178852643419573,
+        "coverage_ci": [
+          0.8978585458257475,
+          0.9350852032715287
+        ],
+        "mean_cal_count": 50.0562429696288
+      },
+      {
+        "cell": 9,
+        "interval": [
+          1.25,
+          2.5
+        ],
+        "H_count": 24381,
+        "H_only": 212,
+        "F_only": 308,
+        "disagreements": 520,
+        "covered": 22222,
+        "rho": 0.0609525,
+        "delta": 0.0013,
+        "penalty": 0.02132808334358722,
+        "plugin": 0.8786719166564128,
+        "coverage": 0.9114474385792215,
+        "coverage_ci": [
+          0.9078116383571311,
+          0.9149848142418026
+        ],
+        "mean_cal_count": 62.34613018333948
+      },
+      {
+        "cell": 10,
+        "interval": [
+          2.5,
+          3.75
+        ],
+        "H_count": 13701,
+        "H_only": 194,
+        "F_only": 174,
+        "disagreements": 368,
+        "covered": 12384,
+        "rho": 0.0342525,
+        "delta": 0.00092,
+        "penalty": 0.026859353331873587,
+        "plugin": 0.8731406466681264,
+        "coverage": 0.9038756295160937,
+        "coverage_ci": [
+          0.8988173629017434,
+          0.9087616109057024
+        ],
+        "mean_cal_count": 62.00240858331509
+      },
+      {
+        "cell": 11,
+        "interval": [
+          3.75,
+          5.0
+        ],
+        "H_count": 12363,
+        "H_only": 166,
+        "F_only": 165,
+        "disagreements": 331,
+        "covered": 11207,
+        "rho": 0.0309075,
+        "delta": 0.0008275,
+        "penalty": 0.026773436868074093,
+        "plugin": 0.8732265631319259,
+        "coverage": 0.9064951872522851,
+        "coverage_ci": [
+          0.9012265952033637,
+          0.9115714902420681
+        ],
+        "mean_cal_count": 62.04270808056297
+      },
+      {
+        "cell": 12,
+        "interval": [
+          5.0,
+          6.25
+        ],
+        "H_count": 8683,
+        "H_only": 61,
+        "F_only": 58,
+        "disagreements": 119,
+        "covered": 7877,
+        "rho": 0.0217075,
+        "delta": 0.0002975,
+        "penalty": 0.013704940688702061,
+        "plugin": 0.8862950593112979,
+        "coverage": 0.9071749395370263,
+        "coverage_ci": [
+          0.9008762623566642,
+          0.9131988339496296
+        ],
+        "mean_cal_count": 62.34561787400668,
+        "simultaneous_lower": 0.881962894789925
+      },
+      {
+        "cell": 13,
+        "interval": [
+          6.25,
+          7.5
+        ],
+        "H_count": 8415,
+        "H_only": 80,
+        "F_only": 57,
+        "disagreements": 137,
+        "covered": 7597,
+        "rho": 0.0210375,
+        "delta": 0.0003425,
+        "penalty": 0.01628045157456922,
+        "plugin": 0.8837195484254308,
+        "coverage": 0.9027926322043969,
+        "coverage_ci": [
+          0.8962635807442864,
+          0.9090412197174829
+        ],
+        "mean_cal_count": 62.27510398098634
+      },
+      {
+        "cell": 14,
+        "interval": [
+          7.5,
+          8.75
+        ],
+        "H_count": 6273,
+        "H_only": 65,
+        "F_only": 49,
+        "disagreements": 114,
+        "covered": 5673,
+        "rho": 0.0156825,
+        "delta": 0.000285,
+        "penalty": 0.018173122907699665,
+        "plugin": 0.8818268770923003,
+        "coverage": 0.9043519846963175,
+        "coverage_ci": [
+          0.8968049944796854,
+          0.9115205430511326
+        ],
+        "mean_cal_count": 62.095488601944844
+      },
+      {
+        "cell": 15,
+        "interval": [
+          8.75,
+          10.0
+        ],
+        "H_count": 5589,
+        "H_only": 56,
+        "F_only": 52,
+        "disagreements": 108,
+        "covered": 5050,
+        "rho": 0.0139725,
+        "delta": 0.00027,
+        "penalty": 0.01932367149758454,
+        "plugin": 0.8806763285024155,
+        "coverage": 0.9035605653963142,
+        "coverage_ci": [
+          0.8955199914063718,
+          0.911176904182005
+        ],
+        "mean_cal_count": 62.34800500984076
+      },
+      {
+        "cell": 16,
+        "interval": [
+          0.0,
+          0.625
+        ],
+        "H_count": 23910,
+        "H_only": 5,
+        "F_only": 9,
+        "disagreements": 14,
+        "covered": 21820,
+        "rho": 0.059775,
+        "delta": 3.5e-05,
+        "penalty": 0.0005855290673358427,
+        "plugin": 0.8994144709326641,
+        "coverage": 0.9125888749477207,
+        "coverage_ci": [
+          0.9089376439623607,
+          0.9161394522906319
+        ],
+        "mean_cal_count": 30.9349226265161,
+        "simultaneous_lower": 0.8988195282697151
+      },
+      {
+        "cell": 17,
+        "interval": [
+          0.625,
+          1.25
+        ],
+        "H_count": 23825,
+        "H_only": 4,
+        "F_only": 3,
+        "disagreements": 7,
+        "covered": 21835,
+        "rho": 0.0595625,
+        "delta": 1.75e-05,
+        "penalty": 0.0002938090241343127,
+        "plugin": 0.8997061909758657,
+        "coverage": 0.9164742917103883,
+        "coverage_ci": [
+          0.9128890869125591,
+          0.9199575148909008
+        ],
+        "mean_cal_count": 31.004407135362015
+      },
+      {
+        "cell": 18,
+        "interval": [
+          1.25,
+          1.875
+        ],
+        "H_count": 12552,
+        "H_only": 161,
+        "F_only": 94,
+        "disagreements": 255,
+        "covered": 11393,
+        "rho": 0.03138,
+        "delta": 0.0006375,
+        "penalty": 0.02031548757170172,
+        "plugin": 0.8796845124282983,
+        "coverage": 0.9076641172721479,
+        "coverage_ci": [
+          0.9024647602562003,
+          0.9126735394137621
+        ],
+        "mean_cal_count": 31.066443594646273
+      },
+      {
+        "cell": 19,
+        "interval": [
+          1.875,
+          2.5
+        ],
+        "H_count": 12394,
+        "H_only": 148,
+        "F_only": 119,
+        "disagreements": 267,
+        "covered": 11296,
+        "rho": 0.030985,
+        "delta": 0.0006675,
+        "penalty": 0.021542681942875584,
+        "plugin": 0.8784573180571245,
+        "coverage": 0.9114087461675004,
+        "coverage_ci": [
+          0.9062686827417081,
+          0.916354636533724
+        ],
+        "mean_cal_count": 30.996288526706472
+      },
+      {
+        "cell": 20,
+        "interval": [
+          2.5,
+          3.125
+        ],
+        "H_count": 5845,
+        "H_only": 92,
+        "F_only": 70,
+        "disagreements": 162,
+        "covered": 5305,
+        "rho": 0.0146125,
+        "delta": 0.000405,
+        "penalty": 0.027715996578272027,
+        "plugin": 0.872284003421728,
+        "coverage": 0.9076133447390933,
+        "coverage_ci": [
+          0.8998993544714355,
+          0.9149176213894293
+        ],
+        "mean_cal_count": 31.106244653550043
+      },
+      {
+        "cell": 21,
+        "interval": [
+          3.125,
+          3.75
+        ],
+        "H_count": 5986,
+        "H_only": 84,
+        "F_only": 67,
+        "disagreements": 151,
+        "covered": 5468,
+        "rho": 0.014965,
+        "delta": 0.0003775,
+        "penalty": 0.02522552622786502,
+        "plugin": 0.874774473772135,
+        "coverage": 0.913464751085867,
+        "coverage_ci": [
+          0.9060557454314068,
+          0.9204678415886345
+        ],
+        "mean_cal_count": 31.145673237554295
+      },
+      {
+        "cell": 22,
+        "interval": [
+          3.75,
+          4.375
+        ],
+        "H_count": 6503,
+        "H_only": 78,
+        "F_only": 67,
+        "disagreements": 145,
+        "covered": 5941,
+        "rho": 0.0162575,
+        "delta": 0.0003625,
+        "penalty": 0.02229740119944641,
+        "plugin": 0.8777025988005536,
+        "coverage": 0.9135783484545594,
+        "coverage_ci": [
+          0.9064852387588269,
+          0.9202979302663955
+        ],
+        "mean_cal_count": 30.989850838074734
+      },
+      {
+        "cell": 23,
+        "interval": [
+          4.375,
+          5.0
+        ],
+        "H_count": 6677,
+        "H_only": 83,
+        "F_only": 98,
+        "disagreements": 181,
+        "covered": 6099,
+        "rho": 0.0166925,
+        "delta": 0.0004525,
+        "penalty": 0.027107982626928262,
+        "plugin": 0.8728920173730718,
+        "coverage": 0.9134341770256102,
+        "coverage_ci": [
+          0.906432530703201,
+          0.9200722274206552
+        ],
+        "mean_cal_count": 31.260446308222257
+      },
+      {
+        "cell": 24,
+        "interval": [
+          5.0,
+          5.625
+        ],
+        "H_count": 1621,
+        "H_only": 11,
+        "F_only": 29,
+        "disagreements": 40,
+        "covered": 1527,
+        "rho": 0.0040525,
+        "delta": 0.0001,
+        "penalty": 0.024676125848241828,
+        "plugin": 0.8753238741517582,
+        "coverage": 0.9420111042566317,
+        "coverage_ci": [
+          0.9295012643760674,
+          0.9528881180972892
+        ],
+        "mean_cal_count": 31.87847008019741
+      },
+      {
+        "cell": 25,
+        "interval": [
+          5.625,
+          6.25
+        ],
+        "H_count": 1640,
+        "H_only": 12,
+        "F_only": 10,
+        "disagreements": 22,
+        "covered": 1496,
+        "rho": 0.0041,
+        "delta": 5.5e-05,
+        "penalty": 0.013414634146341463,
+        "plugin": 0.8865853658536585,
+        "coverage": 0.9121951219512195,
+        "coverage_ci": [
+          0.8974442910738785,
+          0.9254499584975711
+        ],
+        "mean_cal_count": 31.490243902439026
+      },
+      {
+        "cell": 26,
+        "interval": [
+          6.25,
+          6.875
+        ],
+        "H_count": 1620,
+        "H_only": 12,
+        "F_only": 18,
+        "disagreements": 30,
+        "covered": 1490,
+        "rho": 0.00405,
+        "delta": 7.5e-05,
+        "penalty": 0.018518518518518517,
+        "plugin": 0.8814814814814815,
+        "coverage": 0.9197530864197531,
+        "coverage_ci": [
+          0.9054407011394423,
+          0.9325211866297021
+        ],
+        "mean_cal_count": 31.42530864197531
+      },
+      {
+        "cell": 27,
+        "interval": [
+          6.875,
+          7.5
+        ],
+        "H_count": 1619,
+        "H_only": 10,
+        "F_only": 32,
+        "disagreements": 42,
+        "covered": 1484,
+        "rho": 0.0040475,
+        "delta": 0.000105,
+        "penalty": 0.025941939468807906,
+        "plugin": 0.8740580605311921,
+        "coverage": 0.916615194564546,
+        "coverage_ci": [
+          0.9020715667663108,
+          0.9296258968554622
+        ],
+        "mean_cal_count": 31.812229771463866
+      },
+      {
+        "cell": 28,
+        "interval": [
+          7.5,
+          8.125
+        ],
+        "H_count": 846,
+        "H_only": 6,
+        "F_only": 14,
+        "disagreements": 20,
+        "covered": 776,
+        "rho": 0.002115,
+        "delta": 5e-05,
+        "penalty": 0.02364066193853428,
+        "plugin": 0.8763593380614657,
+        "coverage": 0.91725768321513,
+        "coverage_ci": [
+          0.8966145570680497,
+          0.9349326239651393
+        ],
+        "mean_cal_count": 31.400709219858157
+      },
+      {
+        "cell": 29,
+        "interval": [
+          8.125,
+          8.75
+        ],
+        "H_count": 817,
+        "H_only": 5,
+        "F_only": 14,
+        "disagreements": 19,
+        "covered": 747,
+        "rho": 0.0020425,
+        "delta": 4.75e-05,
+        "penalty": 0.023255813953488372,
+        "plugin": 0.8767441860465116,
+        "coverage": 0.9143206854345165,
+        "coverage_ci": [
+          0.8929878561803996,
+          0.9326016003117537
+        ],
+        "mean_cal_count": 31.642594859241125
+      },
+      {
+        "cell": 30,
+        "interval": [
+          8.75,
+          9.375
+        ],
+        "H_count": 954,
+        "H_only": 8,
+        "F_only": 8,
+        "disagreements": 16,
+        "covered": 871,
+        "rho": 0.002385,
+        "delta": 4e-05,
+        "penalty": 0.016771488469601678,
+        "plugin": 0.8832285115303984,
+        "coverage": 0.9129979035639413,
+        "coverage_ci": [
+          0.8932887867258057,
+          0.9301092884570911
+        ],
+        "mean_cal_count": 31.41404612159329
+      },
+      {
+        "cell": 31,
+        "interval": [
+          9.375,
+          10.0
+        ],
+        "H_count": 1016,
+        "H_only": 8,
+        "F_only": 18,
+        "disagreements": 26,
+        "covered": 944,
+        "rho": 0.00254,
+        "delta": 6.5e-05,
+        "penalty": 0.025590551181102362,
+        "plugin": 0.8744094488188977,
+        "coverage": 0.9291338582677166,
+        "coverage_ci": [
+          0.911585242931064,
+          0.9441418677414142
+        ],
+        "mean_cal_count": 31.515748031496063
+      },
+      {
+        "cell": 32,
+        "interval": [
+          0.0,
+          0.3125
+        ],
+        "H_count": 325,
+        "H_only": 3,
+        "F_only": 4,
+        "disagreements": 7,
+        "covered": 292,
+        "rho": 0.0008125,
+        "delta": 1.75e-05,
+        "penalty": 0.021538461538461538,
+        "plugin": 0.8784615384615385,
+        "coverage": 0.8984615384615384,
+        "coverage_ci": [
+          0.8603625230057084,
+          0.9290693970879019
+        ],
+        "mean_cal_count": 20.784615384615385
+      },
+      {
+        "cell": 33,
+        "interval": [
+          0.3125,
+          0.625
+        ],
+        "H_count": 307,
+        "H_only": 6,
+        "F_only": 1,
+        "disagreements": 7,
+        "covered": 277,
+        "rho": 0.0007675,
+        "delta": 1.75e-05,
+        "penalty": 0.02280130293159609,
+        "plugin": 0.8771986970684039,
+        "coverage": 0.9022801302931596,
+        "coverage_ci": [
+          0.8634420080266068,
+          0.9330936420106227
+        ],
+        "mean_cal_count": 20.9185667752443
+      },
+      {
+        "cell": 34,
+        "interval": [
+          0.625,
+          0.9375
+        ],
+        "H_count": 313,
+        "H_only": 0,
+        "F_only": 4,
+        "disagreements": 4,
+        "covered": 289,
+        "rho": 0.0007825,
+        "delta": 1e-05,
+        "penalty": 0.012779552715654952,
+        "plugin": 0.887220447284345,
+        "coverage": 0.9233226837060703,
+        "coverage_ci": [
+          0.8880572222192132,
+          0.9502556502460962
+        ],
+        "mean_cal_count": 21.01916932907348
+      },
+      {
+        "cell": 35,
+        "interval": [
+          0.9375,
+          1.25
+        ],
+        "H_count": 311,
+        "H_only": 3,
+        "F_only": 0,
+        "disagreements": 3,
+        "covered": 274,
+        "rho": 0.0007775,
+        "delta": 7.5e-06,
+        "penalty": 0.00964630225080386,
+        "plugin": 0.8903536977491961,
+        "coverage": 0.8810289389067524,
+        "coverage_ci": [
+          0.839758229105787,
+          0.9148342361089384
+        ],
+        "mean_cal_count": 20.80385852090032
+      },
+      {
+        "cell": 36,
+        "interval": [
+          1.25,
+          1.5625
+        ],
+        "H_count": 106,
+        "H_only": 1,
+        "F_only": 1,
+        "disagreements": 2,
+        "covered": 96,
+        "rho": 0.000265,
+        "delta": 5e-06,
+        "penalty": 0.018867924528301886,
+        "plugin": 0.8811320754716981,
+        "coverage": 0.9056603773584906,
+        "coverage_ci": [
+          0.8333436185458363,
+          0.9538275368773232
+        ],
+        "mean_cal_count": 20.566037735849058
+      },
+      {
+        "cell": 37,
+        "interval": [
+          1.5625,
+          1.875
+        ],
+        "H_count": 102,
+        "H_only": 2,
+        "F_only": 1,
+        "disagreements": 3,
+        "covered": 88,
+        "rho": 0.000255,
+        "delta": 7.5e-06,
+        "penalty": 0.029411764705882353,
+        "plugin": 0.8705882352941177,
+        "coverage": 0.8627450980392157,
+        "coverage_ci": [
+          0.7804434641034083,
+          0.922881923694815
+        ],
+        "mean_cal_count": 20.627450980392158
+      },
+      {
+        "cell": 38,
+        "interval": [
+          1.875,
+          2.1875
+        ],
+        "H_count": 113,
+        "H_only": 2,
+        "F_only": 1,
+        "disagreements": 3,
+        "covered": 101,
+        "rho": 0.0002825,
+        "delta": 7.5e-06,
+        "penalty": 0.02654867256637168,
+        "plugin": 0.8734513274336283,
+        "coverage": 0.8938053097345132,
+        "coverage_ci": [
+          0.8218457668641274,
+          0.9439106598898893
+        ],
+        "mean_cal_count": 21.008849557522122
+      },
+      {
+        "cell": 39,
+        "interval": [
+          2.1875,
+          2.5
+        ],
+        "H_count": 129,
+        "H_only": 1,
+        "F_only": 3,
+        "disagreements": 4,
+        "covered": 121,
+        "rho": 0.0003225,
+        "delta": 1e-05,
+        "penalty": 0.031007751937984496,
+        "plugin": 0.8689922480620156,
+        "coverage": 0.937984496124031,
+        "coverage_ci": [
+          0.8814606794921064,
+          0.972848488397729
+        ],
+        "mean_cal_count": 20.93798449612403
+      },
+      {
+        "cell": 40,
+        "interval": [
+          2.5,
+          2.8125
+        ],
+        "H_count": 26,
+        "H_only": 0,
+        "F_only": 0,
+        "disagreements": 0,
+        "covered": 25,
+        "rho": 6.5e-05,
+        "delta": 0.0,
+        "penalty": 0.0,
+        "plugin": 0.9,
+        "coverage": 0.9615384615384616,
+        "coverage_ci": [
+          0.803630353237461,
+          0.9990267121066649
+        ],
+        "mean_cal_count": 20.46153846153846
+      },
+      {
+        "cell": 41,
+        "interval": [
+          2.8125,
+          3.125
+        ],
+        "H_count": 23,
+        "H_only": 1,
+        "F_only": 0,
+        "disagreements": 1,
+        "covered": 22,
+        "rho": 5.75e-05,
+        "delta": 2.5e-06,
+        "penalty": 0.043478260869565216,
+        "plugin": 0.8565217391304348,
+        "coverage": 0.9565217391304348,
+        "coverage_ci": [
+          0.7805133925465195,
+          0.9988998313695585
+        ],
+        "mean_cal_count": 20.608695652173914
+      },
+      {
+        "cell": 42,
+        "interval": [
+          3.125,
+          3.4375
+        ],
+        "H_count": 37,
+        "H_only": 0,
+        "F_only": 0,
+        "disagreements": 0,
+        "covered": 34,
+        "rho": 9.25e-05,
+        "delta": 0.0,
+        "penalty": 0.0,
+        "plugin": 0.9,
+        "coverage": 0.918918918918919,
+        "coverage_ci": [
+          0.7809037937619998,
+          0.9829564693041812
+        ],
+        "mean_cal_count": 21.27027027027027
+      },
+      {
+        "cell": 43,
+        "interval": [
+          3.4375,
+          3.75
+        ],
+        "H_count": 36,
+        "H_only": 1,
+        "F_only": 0,
+        "disagreements": 1,
+        "covered": 33,
+        "rho": 9e-05,
+        "delta": 2.5e-06,
+        "penalty": 0.027777777777777776,
+        "plugin": 0.8722222222222222,
+        "coverage": 0.9166666666666666,
+        "coverage_ci": [
+          0.7753102394430269,
+          0.9824735040760654
+        ],
+        "mean_cal_count": 20.805555555555557
+      },
+      {
+        "cell": 44,
+        "interval": [
+          3.75,
+          4.0625
+        ],
+        "H_count": 30,
+        "H_only": 0,
+        "F_only": 0,
+        "disagreements": 0,
+        "covered": 27,
+        "rho": 7.5e-05,
+        "delta": 0.0,
+        "penalty": 0.0,
+        "plugin": 0.9,
+        "coverage": 0.9,
+        "coverage_ci": [
+          0.7347115495257919,
+          0.9788828629702774
+        ],
+        "mean_cal_count": 21.033333333333335
+      },
+      {
+        "cell": 45,
+        "interval": [
+          4.0625,
+          4.375
+        ],
+        "H_count": 30,
+        "H_only": 0,
+        "F_only": 3,
+        "disagreements": 3,
+        "covered": 26,
+        "rho": 7.5e-05,
+        "delta": 7.5e-06,
+        "penalty": 0.1,
+        "plugin": 0.8,
+        "coverage": 0.8666666666666667,
+        "coverage_ci": [
+          0.6927816497238732,
+          0.9624465036616366
+        ],
+        "mean_cal_count": 21.2
+      },
+      {
+        "cell": 46,
+        "interval": [
+          4.375,
+          4.6875
+        ],
+        "H_count": 44,
+        "H_only": 0,
+        "F_only": 2,
+        "disagreements": 2,
+        "covered": 42,
+        "rho": 0.00011,
+        "delta": 5e-06,
+        "penalty": 0.045454545454545456,
+        "plugin": 0.8545454545454546,
+        "coverage": 0.9545454545454546,
+        "coverage_ci": [
+          0.8452684223410106,
+          0.9944470480046295
+        ],
+        "mean_cal_count": 21.068181818181817
+      },
+      {
+        "cell": 47,
+        "interval": [
+          4.6875,
+          5.0
+        ],
+        "H_count": 44,
+        "H_only": 1,
+        "F_only": 0,
+        "disagreements": 1,
+        "covered": 41,
+        "rho": 0.00011,
+        "delta": 2.5e-06,
+        "penalty": 0.022727272727272728,
+        "plugin": 0.8772727272727273,
+        "coverage": 0.9318181818181818,
+        "coverage_ci": [
+          0.8134379899279777,
+          0.9857123315730246
+        ],
+        "mean_cal_count": 20.454545454545453
+      },
+      {
+        "cell": 48,
+        "interval": [
+          5.0,
+          5.3125
+        ],
+        "H_count": 1,
+        "H_only": 0,
+        "F_only": 0,
+        "disagreements": 0,
+        "covered": 1,
+        "rho": 2.5e-06,
+        "delta": 0.0,
+        "penalty": 0.0,
+        "plugin": 0.9,
+        "coverage": 1.0,
+        "coverage_ci": [
+          0.025,
+          1.0
+        ],
+        "mean_cal_count": 21.0
+      },
+      {
+        "cell": 49,
+        "interval": [
+          5.3125,
+          5.625
+        ],
+        "H_count": 1,
+        "H_only": 0,
+        "F_only": 0,
+        "disagreements": 0,
+        "covered": 1,
+        "rho": 2.5e-06,
+        "delta": 0.0,
+        "penalty": 0.0,
+        "plugin": 0.9,
+        "coverage": 1.0,
+        "coverage_ci": [
+          0.025,
+          1.0
+        ],
+        "mean_cal_count": 21.0
+      },
+      {
+        "cell": 52,
+        "interval": [
+          6.25,
+          6.5625
+        ],
+        "H_count": 1,
+        "H_only": 0,
+        "F_only": 0,
+        "disagreements": 0,
+        "covered": 1,
+        "rho": 2.5e-06,
+        "delta": 0.0,
+        "penalty": 0.0,
+        "plugin": 0.9,
+        "coverage": 1.0,
+        "coverage_ci": [
+          0.025,
+          1.0
+        ],
+        "mean_cal_count": 23.0
+      },
+      {
+        "cell": 53,
+        "interval": [
+          6.5625,
+          6.875
+        ],
+        "H_count": 2,
+        "H_only": 0,
+        "F_only": 0,
+        "disagreements": 0,
+        "covered": 2,
+        "rho": 5e-06,
+        "delta": 0.0,
+        "penalty": 0.0,
+        "plugin": 0.9,
+        "coverage": 1.0,
+        "coverage_ci": [
+          0.15811388300841897,
+          1.0
+        ],
+        "mean_cal_count": 21.5
+      },
+      {
+        "cell": 55,
+        "interval": [
+          7.1875,
+          7.5
+        ],
+        "H_count": 2,
+        "H_only": 0,
+        "F_only": 0,
+        "disagreements": 0,
+        "covered": 2,
+        "rho": 5e-06,
+        "delta": 0.0,
+        "penalty": 0.0,
+        "plugin": 0.9,
+        "coverage": 1.0,
+        "coverage_ci": [
+          0.15811388300841897,
+          1.0
+        ],
+        "mean_cal_count": 22.0
+      }
+    ]
+  }
+}

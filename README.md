@@ -73,3 +73,17 @@ For alternatives, use `--directions log2`, `--aggregation majority`, or
   primaryClass={stat.ME}
 }
 ```
+
+## Tree stability and selected-leaf coverage
+
+- [Split criterion comparison](benchmarks/cut_criterion_stability/REPORT.md) reports how often revealing the test score changes its leaf. The eight-leaf Data 2 comparison is in the zero-threshold table.
+- [Selected-leaf coverage](benchmarks/selected_leaf_coverage/REPORT.md) reports the estimated coverage bound and observed coverage for eight leaves on Data 1 and Data 2.
+
+To reproduce both simulations on macOS or Linux, use Python 3.10 or later with NumPy, SciPy, scikit-learn, and a C++17 compiler available as `c++`. Run from the repository root:
+
+```sh
+python benchmarks/cut_criterion_stability/run.py
+python benchmarks/selected_leaf_coverage/run_leaves.py
+```
+
+Both scripts generate their own data. New runs write to `benchmarks/output/`; the saved results are beside each report.
